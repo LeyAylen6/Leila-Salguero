@@ -1,5 +1,27 @@
+.skillsSection {
+    height: 90vh;
+    width: 100%;
+    background-color: #fdb1fd;
+    background-image: url('./../../assets/fondo2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}   
+
+.skillsSection > video {
+    z-index: 1000;
+    height: 70%;
+    width: 700px;
+}
+
 .skillsContainer {
-    height: 60vh;
+    /* position: absolute;  */
+    right: 100px;
+    top: 1050px;
+    height: 70vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -12,8 +34,8 @@
 }
   
 .skills {
-    flex-basis: 10%;
-    height: 100%;
+    flex-basis: 15%;
+    height: 60%;
     margin-bottom: 1em;
     border-radius: 5px;
     display: flex;
@@ -22,18 +44,22 @@
     align-items: center;
     flex-direction: column;
     cursor: pointer;
-    box-shadow: 3px 3px fuchsia;
+    overflow: hidden;
+    box-shadow: 3px 3px rgb(0, 0, 0);
     transition: 
-        flex-grow .3s linear,
-        background-color .2s ease
+        flex-grow .2s linear,
+        background-color .3s ease
+}
+
+.skills > span {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .skill {
-    color: transparent;
+    display: none;
     position: absolute;
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(auto);
 }
 
 .skills:hover {
@@ -41,12 +67,14 @@
     background-color: #cde9f7;
 }
 
-.skills:hover > h1 {
-    color: transparent;
+.skills:hover > span {
+    display: none;
 }
  
 .skills:hover .skill {
-    color: black
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(auto);
 }
 
 .skills:active { 

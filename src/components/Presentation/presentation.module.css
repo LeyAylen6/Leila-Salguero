@@ -1,8 +1,11 @@
 .presentation {
+    padding-top: 100px;
     width: 100vw;
-    height: 800px;
+    height: 1000px;
     display: flex;
     justify-content: space-evenly;
+    background-image: url('./../../assets/fondo.svg');
+    background-size: cover;
 }
 
 .imLeila {
@@ -36,15 +39,16 @@
 }
 
 .imLeila > video {
-    margin-top: 50px;
+    margin-top: 20px;
     object-fit: cover;
     height: 40%;
     width: 100%;
 }
 
-.imLeila > h1{
+.imLeila > h1 {
     padding: 0;
     position: absolute;
+    margin-top: -5px;
     top: 50%;
     transform: translateY(-50%);
     width: 75%;
@@ -152,8 +156,8 @@
     animation-delay: 3.2s;
 }
 
-.imLeila > h2 {
-    margin-top: -20px;
+.imLeila > h3 {
+    margin-top: -100px;
     height: 70px;
     color: fuchsia;
     font-size: 30px;
@@ -165,10 +169,11 @@
 }
 
 .imgContainer {
-    margin-top: 32px;
-    width: 35%;
+    margin-top: 30px;
+    width: 21%;
     height: 750px;
     opacity: 0;
+    background-color: rgb(11, 11, 11);
     overflow: hidden;
     display: inline-block;
     animation: animate 4s linear forwards;
@@ -178,9 +183,8 @@
 }
 
 .imgContainer > img {
-    width: 100%;
     margin-left: 20px ;
-    transform: scale(1.0);
+    height: 100%;
 }
 
 

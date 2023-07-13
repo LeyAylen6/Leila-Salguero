@@ -6,11 +6,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky; 
+    position: fixed; 
     transform: translateY(-100px);
     animation: bottom 4s linear forwards;
     -webkit-animation: bottom 1s linear forwards;
     animation-delay: 1s;
+    z-index: 10000;
 }
 
 .navBar > img {

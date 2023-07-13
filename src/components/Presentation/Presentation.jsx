@@ -1,11 +1,11 @@
 import styles from './presentation.module.css';
 import smoke from './../../assets/smoke.mp4'
-import profil from './../../assets/profil.jpg'
+import profil from './../../assets/profil.jpeg'
 //  autoPlay muted
 
 const Presentation = () => {
   return (
-    <seccion className={styles.presentation}> 
+    <seccion id='about' className={styles.presentation}> 
 
       <div className={styles.imLeila}>
         <video src={smoke} autoPlay muted></video>
@@ -30,7 +30,7 @@ const Presentation = () => {
           <span>o</span>
         </h1>
 
-        <h2>F U L L &nbsp;  S T A C K &nbsp; D E V E L O P E R</h2>
+        <h3>F U L L &nbsp;  S T A C K &nbsp; D E V E L O P E R</h3>
         
         <p>
           Tengo experiencia en desarrollo Front End, Back End y Testing QA Manual.
@@ -40,7 +40,7 @@ const Presentation = () => {
           <br />
           Soy perfeccionista en todo lo que hago, siempre me esfuerzo por ofrecer soluciones y asegurar que cada aspecto esté cuidadosamente revisado. 
           <br />
-          Si quieres saber más de mi, <a href=''> Contactame! </a>
+          Si quieres saber más de mi, contactame!
         </p>
 
       </div>

@@ -1,0 +1,16 @@
+.certificatesContainer {
+    width: 100%;
+    height: 1100px;
+}
+
+.certificatesContainer > h1 {
+    text-align: center;
+}
+
+.certificatesContainer > h2 {
+    padding-top: 120px;
+}
+
+.java {
+    margin-left: -110px;
+}
