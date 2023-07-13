@@ -23,13 +23,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
     text-align: center;
     width: 250px;
     height: 80%;
     clip-path: polygon(75% 0%, 89% 51%, 75% 100%, 0% 100%, 10% 52%, 0% 0%);
-}
-
-.link > a {
     font-size: 25px;
     text-decoration: none;
     color: white;

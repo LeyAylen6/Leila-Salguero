@@ -1,6 +1,5 @@
 .formContainer {
     width: 80%;
-    height: 700px;
     display: grid;
     padding-left: 50px;
     grid-template-columns: 50% 50%;
