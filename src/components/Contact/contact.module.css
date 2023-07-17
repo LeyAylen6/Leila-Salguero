@@ -3,10 +3,11 @@
     text-align: center;
     display: grid;
     grid-template-columns: 40% 40%;
-    grid-template-rows: 90px 15px 100px 500px;
+    grid-template-rows: 110px 15px 100px 500px;
     grid-column-gap: 50px;
     justify-content: center;
     grid-row-gap: 10px;
+    margin-bottom: 50px;
 }
 
 .contactContainer > h2 {

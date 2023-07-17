@@ -4,6 +4,7 @@ import FormMessage from './Form/Form'
 import Github from './../../assets/Github.png'
 import LinkedIn from './../../assets/LinkedIn.png'
 import Phone from './../../assets/Phone.svg'
+// import email from './..'
 
 const Contact = () => {
     return (
@@ -22,6 +23,11 @@ const Contact = () => {
             <img src={Github}/>
             <span>LeyAylen6</span>
           </Link>
+
+          <Link className={`${styles.link} ${styles.linkGithub}`} to="https://github.com/LeyAylen6">
+            <img src={Github}/>
+            <span>LeyAylen6</span>
+          </Link> 
 
           <div className={`${styles.link} ${styles.linkPhone}`}>
             <img src={Phone}/>

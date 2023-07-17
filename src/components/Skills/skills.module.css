@@ -5,20 +5,28 @@
     background-image: url('./../../assets/fondo2.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -250px;
+    background-position-y: -155px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 120px;
 }   
 
-.skillsSection > video {
+.videoContainer {
     z-index: 1000;
+    width: 50%;
     height: 70%;
-    width: 700px;
+    overflow: hidden;
+    margin-bottom: 130px
+}
+
+.videoContainer > video {
+    transform: scale(1.2);
+    margin-left: -100px;
+    height: 100%;
 }
 
 .skillsContainer {
-    /* position: absolute;  */
     right: 100px;
     top: 1050px;
     height: 70vh;
@@ -31,6 +39,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: -7px;
 }
   
 .skills {

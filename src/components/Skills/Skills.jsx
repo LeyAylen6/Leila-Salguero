@@ -10,7 +10,9 @@ const Skills = () => {
     return (
         <section id='skills' className={styles.skillsSection}>
 
-            <video src={skills} autoPlay muted></video>
+            <div className={styles.videoContainer}>
+                <video src={skills} autoPlay muted></video>
+            </div>
 
             <div className={styles.skillsContainer}> 
                 
