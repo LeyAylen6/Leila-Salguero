@@ -1,7 +1,7 @@
 import styles from './projects.module.css'
 import rickAndMorty from './../../assets/rickAndMorty.mp4'
-import henryVideogames from './../../assets/henryVideogames.mp4'
-import natureXtreme from './../../assets/NatureXtreme.jpeg'
+import henryVideogames from './../../assets/HenryVideogames.mp4'
+import natureXtreme from './../../assets/NatureXtreme.mp4'
 
 const Proyects = () => {
     return (
@@ -11,7 +11,7 @@ const Proyects = () => {
 
         <div className={styles.project}>
           <h4>NatureXtreme</h4> 
-          <img src={natureXtreme} />
+          <video src={natureXtreme} controls/>
 
           <p>
           E-Commerce de ropa para actividades al aire Libre. 
@@ -33,7 +33,7 @@ const Proyects = () => {
           En este proyecto puedes ver más de 100 juegos en diferentes páginas, buscar juegos por nombre, ver su descripción, filtrarlos por ubicación, ordenarlos en orden Ascendente, Descendente o por su Rating. También puedes crear juegos, actualizarlos, eliminarlos y/o guardarlos en tus favoritos.
           </p>
 
-          <a href='https://henry-videogames.up.railway.app/'>Ver el proyecto</a>
+          <a href='https://henry-videogames-zeta.vercel.app/'>Ver el proyecto</a>
 
         </div>
 
@@ -45,7 +45,7 @@ const Proyects = () => {
           Las Técnologias que se utilizaron para crear esta página fueron React, Redux, Html, Css, Node Js, Express, Sequelize y PostgreSQL.
           </p>
           
-          <a href='rick-and-morty-app.up.railway.app'>Ver el proyecto</a>
+          <a href='https://rick-and-morty-one-tan.vercel.app/'>Ver el proyecto</a>
 
         </div>
 
