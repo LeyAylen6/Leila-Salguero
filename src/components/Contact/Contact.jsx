@@ -24,10 +24,10 @@ const Contact = () => {
             <span>LeyAylen6</span>
           </Link>
 
-          <Link className={`${styles.link} ${styles.linkGithub}`} to="https://github.com/LeyAylen6">
+          {/* <Link className={`${styles.link} ${styles.linkGithub}`} to="https://github.com/LeyAylen6">
             <img src={Github}/>
             <span>LeyAylen6</span>
-          </Link> 
+          </Link>  */}
 
           <div className={`${styles.link} ${styles.linkPhone}`}>
             <img src={Phone}/>
