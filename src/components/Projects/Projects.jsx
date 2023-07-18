@@ -1,6 +1,6 @@
 import styles from './projects.module.css'
 import rickAndMorty from './../../assets/rickAndMorty.mp4'
-// import henryVideogames from './../../assets/HenryVideogames.mp4'
+import henryVideogames from './../../assets/henryVideogames.mp4'
 import natureXtreme from './../../assets/NatureXtreme.mp4'
 
 const Proyects = () => {
