@@ -4,8 +4,6 @@ import FormMessage from './Form/Form'
 import Github from './../../assets/Github.png'
 import LinkedIn from './../../assets/LinkedIn.png'
 import Phone from './../../assets/Phone.svg'
-import email from './../../assets/email.svg'
-import star from './../../assets/star.svg'
 
 const Contact = () => {
     return (
