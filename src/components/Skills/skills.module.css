@@ -5,7 +5,7 @@
     background-image: url('./../../assets/fondo2.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -155px;
+    background-position-y: -110px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -27,13 +27,13 @@
 }
 
 .skillsContainer {
-    right: 100px;
+    right: 80px;
     top: 1050px;
-    height: 70vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
     margin: auto;
     padding: 2em;
     display: flex;
@@ -43,7 +43,7 @@
 }
   
 .typeSkill {
-    flex-basis: 15%;
+    flex-basis: 17%;
     height: 60%;
     width: 100%;
     margin-bottom: 1em;
@@ -65,6 +65,18 @@
     font-weight: 700;
 }
 
+#Desarrollo {
+    transform: translateX(310px);
+}
+
+#Testing {
+    transform: translateX(120px);
+}
+
+#Herramientas {
+    transform: translateX(130px)
+}
+
 .typeSkill:hover {
     flex-grow: 1;
     background-color: #cde9f7;
@@ -74,10 +86,6 @@
 .typeSkill:hover > span {
     display: none;
 }
- 
-.typeSkill:hover .skill {
-    display: block;
-}
 
 .typeSkill:active { 
     box-shadow: 1px 1px .1em #67adb5;
@@ -86,12 +94,25 @@
 } 
 
 .skill {
-    display: none;
     width: 100px;
-    height: 10%;
-    background-color: #fdb1fd;
 }
 
 .skill > img {
-    width: 80%;
+    width: 0px;
+    height: 0px;
+}
+
+.skill > p {
+    font-size: 0px;
+}
+
+.typeSkill:hover .skill > img {
+    width: 65%;
+    height: 65%;
+    transition: all .7s ease,
+}
+
+.typeSkill:hover .skill > p {
+    font-size: 15px;
+    transition: all .7s ease,
 }

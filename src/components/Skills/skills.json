@@ -1,39 +1,95 @@
 [
     {
-        "name": "developer",
+        "name": "Desarrollo",
         "skills" : [
             {
                 "name": "HTML",
-                "image": "./../../assets/skills/html.svg"
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/html.svg"
+            },
+            {
+                "name": "Javascript",
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/javascript.svg"
             },
             {
                 "name": "CSS",
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/css.svg"
+            },
+            {
+                "name": "Express",
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/express.svg"
+            },
+            {
+                "name": "Node",
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/node.svg"
+            },
+            {
+                "name": "TypeScript",
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/typescript.svg"
+            },
+            {
+                "name": "TypeORM",
                 "image": "./../../assets/skills/css.svg"
+            },
+            {
+                "name": "Sequelize",
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/sequelize.svg"
+            },
+            {
+                "name": "Java",
+                "image": "./../../assets/skills/css.svg"
+            },
+            {
+                "name": "Spring Boot",
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/spring.svg"
+            },
+            {
+                "name": "Lombok",
+                "image": "./../../assets/skills/css.svg"
+            },
+            {
+                "name": "React",
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/react.svg"
+            },
+            {
+                "name": "Redux",
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/redux.svg"
+            },
+            {
+                "name": "PostgreSQL",
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/postgresql.svg"
             }
         ]
     },
     {
-        "name": "developer",
+        "name": "Testing",
         "skills" : [
             {
-                "name": "HTML",
+                "name": "Zephyr",
                 "image": "html"
             },
             {
-                "name": "CSS",
+                "name": "Selenium",
+                "image": "css"
+            },
+            {
+                "name": "Cypress",
                 "image": "css"
             }
         ]
     },
     {
-        "name": "developer",
+        "name": "Herramientas",
         "skills" : [
             {
-                "name": "HTML",
+                "name": "Jira",
                 "image": "html"
             },
             {
-                "name": "CSS",
+                "name": "Trello",
+                "image": "css"
+            }, 
+            {
+                "name": "Excel",
                 "image": "css"
             }
         ]
