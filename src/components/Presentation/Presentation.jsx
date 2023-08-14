@@ -1,6 +1,6 @@
 import styles from './presentation.module.css';
-import smoke from './../../assets/smoke.mp4'
-import profil from './../../assets/profil.jpeg'
+import smoke from './../../assets/presentation/smoke.mp4'
+import profil from './../../assets/presentation/profil.jpeg'
 //  autoPlay muted
 
 const Presentation = () => {

@@ -1,4 +1,4 @@
-import next from './../../assets/next.svg';
+import next from './../../assets/certificates/next.svg';
 
 export const Next = () => {
     return <img src={next} style={{

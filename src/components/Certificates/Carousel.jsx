@@ -1,10 +1,9 @@
 import styles from "./certificates.module.css";
 import NukaCarousel from "nuka-carousel";
-import Java from './../../assets/Java.jpeg';
-import Scrum from './../../assets/Scrum.png';
-import Testing from './../../assets/Testing.jpeg';
-import FullStack from './../../assets/Certificado Full Stack.jpeg'
-import { Link } from "react-router-dom";
+import Java from './../../assets/certificates/Java.jpeg';
+import Scrum from './../../assets/certificates/Scrum.png';
+import Testing from './../../assets/certificates/Testing.jpeg';
+import FullStack from './../../assets/certificates/Certificado Full Stack.jpeg'
 import { Prev } from "./Prev";
 import { Next } from "./Next";
 
@@ -61,9 +60,9 @@ const Carousel = () => {
       <NukaCarousel {...params}>
           {certificates.map((certificate, index)=> {
               return (
-                  <Link to={certificate.link} key={index} className={`${styles[certificate.name]}`}>
+                  <a href={certificate.link} s key={index} className={`${styles[certificate.name]}`}>
                       <img src={certificate.photo} alt={`${certificate.name} Certificate`} style={{ height:"800px", marginLeft: "248px", cursor:"pointer"}}/>
-                  </Link>
+                  </a>
               )
           })}
       </NukaCarousel>

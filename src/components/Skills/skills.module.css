@@ -42,53 +42,56 @@
     margin-top: -7px;
 }
   
-.skills {
+.typeSkill {
     flex-basis: 15%;
     height: 60%;
+    width: 100%;
     margin-bottom: 1em;
     border-radius: 5px;
     display: flex;
     background-color: #e6f8ff;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     cursor: pointer;
-    overflow: hidden;
     box-shadow: 3px 3px rgb(0, 0, 0);
     transition: 
         flex-grow .2s linear,
         background-color .3s ease
 }
 
-.skills > span {
+.typeSkill > span {
     color: black;
     font-size: 24px;
     font-weight: 700;
 }
 
-.skill {
-    display: none;
-    position: absolute;
-}
-
-.skills:hover {
+.typeSkill:hover {
     flex-grow: 1;
     background-color: #cde9f7;
+    flex-wrap: wrap;
 }
 
-.skills:hover > span {
+.typeSkill:hover > span {
     display: none;
 }
  
-.skills:hover .skill {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(auto);
+.typeSkill:hover .skill {
+    display: block;
 }
 
-.skills:active { 
+.typeSkill:active { 
     box-shadow: 1px 1px .1em #67adb5;
     background-color: #bde6fc;
     color: white;
 } 
 
+.skill {
+    display: none;
+    width: 100px;
+    height: 10%;
+    background-color: #fdb1fd;
+}
+
+.skill > img {
+    width: 80%;
+}

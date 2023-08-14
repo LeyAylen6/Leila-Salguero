@@ -1,0 +1,41 @@
+[
+    {
+        "name": "developer",
+        "skills" : [
+            {
+                "name": "HTML",
+                "image": "./../../assets/skills/html.svg"
+            },
+            {
+                "name": "CSS",
+                "image": "./../../assets/skills/css.svg"
+            }
+        ]
+    },
+    {
+        "name": "developer",
+        "skills" : [
+            {
+                "name": "HTML",
+                "image": "html"
+            },
+            {
+                "name": "CSS",
+                "image": "css"
+            }
+        ]
+    },
+    {
+        "name": "developer",
+        "skills" : [
+            {
+                "name": "HTML",
+                "image": "html"
+            },
+            {
+                "name": "CSS",
+                "image": "css"
+            }
+        ]
+    }
+]

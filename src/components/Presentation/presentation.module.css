@@ -188,3 +188,64 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+   
+    .presentation {
+        padding-top: 130px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imLeila {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      /* justify-content: space-evenly; */
+    }
+
+    .imLeila > video {
+        margin: 0;
+        height: 100px;
+        /* height: 20%; */
+        /* margin-top: -100px; */
+    }
+
+    .imLeila > h1 {
+        width: 90%;
+        height: 50px;
+        font-size: 32px;
+        top: 160px;
+    }
+
+    .imgContainer {
+        clip-path: none;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0;
+    }
+
+    .imgContainer > img {
+        height: 100%;
+        transform: scale(1.7);
+        margin-left: 80px;
+        margin-top: 20px;
+
+    }
+
+    .imLeila > h3 {
+        padding-top: 25px;
+        font-size: 17px;
+        height: 30px;
+    }
+
+    .imLeila > p {
+        width: 90%;
+        font-size: 13px;
+        height: 200px;
+    }
+  }

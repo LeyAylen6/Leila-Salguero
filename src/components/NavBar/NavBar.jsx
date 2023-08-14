@@ -1,5 +1,5 @@
 import styles from './navBar.module.css'
-import separation from './../../assets/next2.svg'
+import separation from './../../assets/navbarSeparation.svg'
 
 const NavBar = () => {
 

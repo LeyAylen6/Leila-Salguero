@@ -1,9 +1,8 @@
 import styles from './contact.module.css'
-import { Link } from 'react-router-dom';
 import FormMessage from './Form/Form'
-import Github from './../../assets/Github.png'
-import LinkedIn from './../../assets/LinkedIn.png'
-import Phone from './../../assets/Phone.svg'
+import Github from './../../assets/contact/Github.png'
+import LinkedIn from './../../assets/contact/LinkedIn.png'
+import Phone from './../../assets/contact/Phone.svg'
 
 const Contact = () => {
     return (
@@ -13,15 +12,15 @@ const Contact = () => {
         <hr />
 
         <div className={styles.contactLinks}>
-          <Link className={`${styles.link} ${styles.linkLinkedIn}`} to="https://www.linkedin.com/in/leilaaylensalguero/">
+          <a className={`${styles.link} ${styles.linkLinkedIn}`} href="https://www.linkedin.com/in/leilaaylensalguero/" target='_blank'>
             <img src={LinkedIn}/>
             <span>leilaaylensalguero</span>
-          </Link>
+          </a>
 
-          <Link className={`${styles.link} ${styles.linkGithub}`} to="https://github.com/LeyAylen6">
+          <a className={`${styles.link} ${styles.linkGithub}`} href="https://github.com/LeyAylen6" target='_blank'>
             <img src={Github}/>
             <span>LeyAylen6</span>
-          </Link>
+          </a>
 
           <div className={`${styles.link} ${styles.linkPhone}`}>
             <img src={Phone}/>
