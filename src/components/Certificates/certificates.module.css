@@ -1,6 +1,5 @@
 .certificatesContainer {
     width: 100%;
-    height: 1100px;
 }
 
 .certificatesContainer > h1 {
@@ -17,4 +16,18 @@
 
 .fullStack {
     margin-left: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+    .certificatesContainer {
+        height: 500px;
+    }
+
+    .java {
+        margin-left: -27px;
+    }
+    
+    .fullStack {
+        margin-left: 20px;
+    }
 }

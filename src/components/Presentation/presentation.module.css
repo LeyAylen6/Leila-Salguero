@@ -180,22 +180,23 @@
     -webkit-animation: animate 1s linear forwards;
     clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
     animation-delay: 4s;
+    background-image: url('./../../assets/presentation/profil2.png');
+    background-position-x: -180px;
+    background-size: 780px 750px;
+    background-repeat: no-repeat;
 }
-
-.imgContainer > img {
-    margin-left: 20px ;
-    height: 100%;
-}
-
 
 @media only screen and (max-width: 600px) {
    
     .presentation {
-        padding-top: 130px;
         height: 700px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-size: 390px 1415px;
+        background-repeat: no-repeat;
+        padding-top: 120px;
+        
     }
 
     .imLeila {
@@ -203,42 +204,32 @@
       display: flex;
       flex-direction: column;
       height: 400px;
-      /* justify-content: space-evenly; */
     }
 
     .imLeila > video {
         margin: 0;
         height: 100px;
-        /* height: 20%; */
-        /* margin-top: -100px; */
     }
 
     .imLeila > h1 {
         width: 90%;
         height: 50px;
         font-size: 32px;
-        top: 160px;
+        top: 180px;
     }
 
     .imgContainer {
+        background-size: 270px 250px;
+        background-position-x: 0px ;
         clip-path: none;
         width: 250px;
         height: 250px;
-        overflow: hidden;
         border-radius: 50%;
         margin: 0;
     }
 
-    .imgContainer > img {
-        height: 100%;
-        transform: scale(1.7);
-        margin-left: 80px;
-        margin-top: 20px;
-
-    }
-
     .imLeila > h3 {
-        padding-top: 25px;
+        padding-top: 120px;
         font-size: 17px;
         height: 30px;
     }

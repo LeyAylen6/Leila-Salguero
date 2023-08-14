@@ -29,7 +29,7 @@
 }
 
 .project > video {
-    height: 370px; 
+    width: 85%;
 }
 
 /* .project > img {
@@ -79,3 +79,34 @@
     transform: skewX(45deg) scale(1, 1);
 }
   
+@media only screen and (max-width: 600px) {
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 85%;
+        height: max-content;
+        box-shadow: 4px 4px fuchsia;
+    }
+
+    .project > video {
+        width: 90%;
+    }
+
+    .project > h4 {
+        font-size: 25px;
+    }
+
+    .project > p {
+        width: 85%;
+        font-size: 15px;
+    }
+
+    .project > a {
+        width: 55%;
+        height: 30px;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+}

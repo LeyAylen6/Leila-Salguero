@@ -36,7 +36,7 @@
             },
             {
                 "name": "Java",
-                "image": "./../../assets/skills/css.svg"
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/163e2b61038447f7503c2e45a14eca462758068d/src/assets/skills/java.svg"
             },
             {
                 "name": "Spring Boot",
@@ -82,11 +82,11 @@
         "skills" : [
             {
                 "name": "Jira",
-                "image": "html"
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/163e2b61038447f7503c2e45a14eca462758068d/src/assets/skills/jira.svg"
             },
             {
                 "name": "Trello",
-                "image": "css"
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/163e2b61038447f7503c2e45a14eca462758068d/src/assets/skills/trello.svg"
             }, 
             {
                 "name": "Excel",

@@ -45,9 +45,7 @@ const Presentation = () => {
 
       </div>
 
-      <div className={styles.imgContainer}>
-        <img src={profil} />
-      </div>
+      <div className={styles.imgContainer}></div>
 
     </seccion>
   );

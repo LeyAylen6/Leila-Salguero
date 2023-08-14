@@ -48,38 +48,8 @@ h4 {
   margin-top: 20px;
 }
 
-
-/* button,
-.project > a {
-  background-color: fuchsia;
-  border-radius: 10px;
-  font-size: 20px;
-  position: relative;
-  border: none;
-  z-index: 1;
-  overflow: hidden;
-  display: inline-block;
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 30px;
+  }
 }
-
-button,
-.project > a::after {
-  content: "";
-  background: #ffadff;
-  position: absolute;
-  z-index: -1;
-  color: black;
-  display: block;
-  left: -20%;
-  right: -20%;
-  top: 0;
-  bottom: 0;
-  transform: skewX(45deg) scale(0, 1);
-  transition: all 0.3s ease;
-}
-  
-button,
-.project > a:hover::after {
-  transition: all 0.3s ease-out;
-  transform: skewX(45deg) scale(1, 1);
-} */
-

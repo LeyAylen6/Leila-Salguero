@@ -16,7 +16,7 @@ const Skills = () => {
                 {skills.map(typeSkill => {
                     return (
                         <div className={styles.typeSkill}>
-                        <span id={styles[typeSkill.name]}>{typeSkill.name}</span>
+                            <span id={styles[typeSkill.name]}>{typeSkill.name}</span>
                         
                             {typeSkill.skills.map(skill => {
                                 return (
@@ -26,7 +26,7 @@ const Skills = () => {
                                     </div>
                                 )
                             })}
-                    </div>
+                        </div>
                     )
                 })}
                 

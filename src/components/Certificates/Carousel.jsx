@@ -6,9 +6,16 @@ import Testing from './../../assets/certificates/Testing.jpeg';
 import FullStack from './../../assets/certificates/Certificado Full Stack.jpeg'
 import { Prev } from "./Prev";
 import { Next } from "./Next";
+import { useEffect, useState } from "react";
 
 
 const Carousel = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      window.innerWidth <= '600px' ? setIsMobile(true) : setIsMobile(false);
+    }, []);
 
     const certificates = [
       {
@@ -44,14 +51,14 @@ const Carousel = () => {
           backgroundColor: "transparent"
         }, 
         pagingDotsStyle: {
-          transform: "scale(3)",
+          transform: isMobile ? "scale(2)" : "scale(3)",
           backgroundColor: "transparent",
-          margin: "8px",
-          marginBottom: "20px",
+          margin: isMobile ? "2px" : "8px",
+          marginBottom: isMobile ? "0px" : "20px",
           fill: "rgb(255,0,255)"
         },
-        prevButtonText: <Prev />,
-        nextButtonText: <Next />,
+        prevButtonText: isMobile ? " " : <Prev />,
+        nextButtonText: isMobile ? " " : <Next />,
       }
     }
 
@@ -60,8 +67,16 @@ const Carousel = () => {
       <NukaCarousel {...params}>
           {certificates.map((certificate, index)=> {
               return (
-                  <a href={certificate.link} s key={index} className={`${styles[certificate.name]}`}>
-                      <img src={certificate.photo} alt={`${certificate.name} Certificate`} style={{ height:"800px", marginLeft: "248px", cursor:"pointer"}}/>
+                  <a href={certificate.link} key={index} className={`${styles[certificate.name]}`}>
+                      <img 
+                        src={certificate.photo} 
+                        alt={`${certificate.name} Certificate`} 
+                        style={{ 
+                          height: isMobile ? "200px" : "200px", 
+                          marginLeft: isMobile ? "45px" : "248px", 
+                          cursor:"pointer"
+                        }}
+                      />
                   </a>
               )
           })}
