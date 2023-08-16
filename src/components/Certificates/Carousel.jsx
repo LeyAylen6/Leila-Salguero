@@ -8,13 +8,21 @@ import { Prev } from "./Prev";
 import { Next } from "./Next";
 import { useEffect, useState } from "react";
 
-
 const Carousel = () => {
 
-  const [isMobile, setIsMobile] = useState(false);
+  const [screenView, setScreenView] = useState('big');
 
     useEffect(() => {
-      window.innerWidth <= '600px' ? setIsMobile(true) : setIsMobile(false);
+      console.log(window.innerWidth)
+
+      if (window.innerWidth > 900) {
+        setScreenView('big')
+      } else if (window.innerWidth <= 900 && window.innerWidth >= 600 ) {
+        setScreenView('medium')
+      } else {
+        setScreenView('little')
+      }
+
     }, []);
 
     const certificates = [
@@ -41,7 +49,7 @@ const Carousel = () => {
       autoplay: true,
       wrapAround: true,
       enableKeyboardControls: true,
-      slidesToShow: 1,
+      slidesToShow: screenView == "medium" ? 2 : 1,
       adaptiveHeight: true,
       defaultControlsConfig: {
         nextButtonStyle: {
@@ -51,31 +59,27 @@ const Carousel = () => {
           backgroundColor: "transparent"
         }, 
         pagingDotsStyle: {
-          transform: isMobile ? "scale(2)" : "scale(3)",
+          transform: screenView == "little" || screenView == "medium" ? "scale(2)" : "scale(3)",
           backgroundColor: "transparent",
-          margin: isMobile ? "2px" : "8px",
-          marginBottom: isMobile ? "0px" : "20px",
+          margin: screenView == "little" ? "2px" : "8px",
+          marginBottom: screenView == "little" ? "0px" : "20px",
           fill: "rgb(255,0,255)"
         },
-        prevButtonText: isMobile ? " " : <Prev />,
-        nextButtonText: isMobile ? " " : <Next />,
+        prevButtonText: screenView == "little" || screenView == "medium" ? " " : <Prev />,
+        nextButtonText: screenView == "little" || screenView == "medium" ? " " : <Next />,
       }
     }
 
   return (
     <div style={{ marginBottom:"500px"}}>
-      <NukaCarousel {...params}>
+      <NukaCarousel {...params} className={styles.test}>
           {certificates.map((certificate, index)=> {
               return (
                   <a href={certificate.link} key={index} className={`${styles[certificate.name]}`}>
                       <img 
                         src={certificate.photo} 
                         alt={`${certificate.name} Certificate`} 
-                        style={{ 
-                          height: isMobile ? "200px" : "200px", 
-                          marginLeft: isMobile ? "45px" : "248px", 
-                          cursor:"pointer"
-                        }}
+                        className={styles.images}
                       />
                   </a>
               )

@@ -57,6 +57,8 @@ const Form = () => {
             <input className={style.lastNameInput} placeholder='Lastname' name='lastname' value={state.lastname} onChange={handleChange}/>
             <input className={style.emailInput} placeholder='Email' name='email' value={state.email} onChange={handleChange} />
             <textarea className={style.messageInput} placeholder='Message' name='message' value={state.message} onChange={handleChange} />
+            {(!state.name | !state.lastname | !state.email | !state.message) ? <p>Debe completar todos los campos</p> : null}
+            
             <button type='submit' disabled={!state.name | !state.lastname | !state.email | !state.message}>Submit</button>
         </form>
     )

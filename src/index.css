@@ -8,7 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
-
+  min-width: 400px;
   width: 100%;
   height: 100vh;
   margin: 0;

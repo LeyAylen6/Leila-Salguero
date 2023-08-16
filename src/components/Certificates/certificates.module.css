@@ -10,6 +10,12 @@
     padding-top: 120px;
 }
 
+.images {
+    height: 800px;
+    margin-left: 248px;
+    cursor: pointer;
+}
+
 .java {
     margin-left: -110px;
 }
@@ -18,7 +24,7 @@
     margin-left: 80px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .certificatesContainer {
         height: 500px;
     }
@@ -30,4 +36,11 @@
     .fullStack {
         margin-left: 20px;
     }
+
+    .images {
+        height: 200px;
+        margin-left: 45px;
+    }
 }
+
+ /* 900 - 700 - 400 */

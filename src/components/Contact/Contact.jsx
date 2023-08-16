@@ -3,11 +3,14 @@ import FormMessage from './Form/Form'
 import Github from './../../assets/contact/Github.png'
 import LinkedIn from './../../assets/contact/LinkedIn.png'
 import Phone from './../../assets/contact/Phone.svg'
+import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
+  const { t } = useTranslation('common');
+
     return (
       <div id='contact' className={styles.contactContainer}> 
-        <h2>Contactame</h2>
+        <h2>{t('contact.title')}</h2>
         
         <hr />
 

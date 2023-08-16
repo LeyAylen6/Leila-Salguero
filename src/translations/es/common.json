@@ -1,3 +1,38 @@
 {
+    "certificates": "Mis Certificados",
     
+    "contact": {
+        "title": "Contactame",
+        "form": {
+            "subtitle": "Enviame un email",
+            "inputName": "Nombre",
+            "inputLastname": "Apellido",
+            "inputEmail": "Email",
+            "inputMessage": "Escribe tu mensaje aquí ...",
+            "error": "Debe completar todos los campos",
+            "submit": "Enviar"
+        }
+    },
+
+    "Navbar": {
+        "links": ["Sobre mi", "Habilidades", "Proyectos", "Certificados", "Contacto"]
+    },
+
+    "Presentation": {
+        "ImLeila": ["S", "o", "y"],
+        "descripcion": "Hola! 😄 Mi nombre es Leila y tengo 23 años, tengo experiencia en proyectos Full Stack y de Testing QA Manual. Tengo conocimientos en metodologías ágiles y herramientas colaborativas tales como Trello y Jira. 🚀 Actualmente estoy ampliando mis habilidades en Java y Spring Boot con muchas ganas de seguír aprendiendo. Soy muy perfeccionista en todo lo que hago y siempre me esfuerzo por ofrecer soluciones. Si quieres saber más de mi, no dudes en contactarme!"
+    },
+
+    "Proyectos": {
+
+        "NatureXtreme": "E-Commerce de ropa para actividades al aire Libre.Cuenta con un perfil de usuario para ver productos, agregarlos a favoritos y realizar compras y un perfil de administrador para controlar stock de productos, modificar y crear nuevos articulos y ver los usuarios registrados en la página. Además cuenta con un blog con información sobre sitios en los cuales podes realizar este tipo de actividades. En este proyecto grupal utilizamos tecnologías tales como Chacra UI, Typescript, Express, TypeORM, entre otras.",
+
+        "HenryVideogames": "Single Page creada utilizando React, Redux, Node Js, Express, Sequelize, PostgreSQL, entre otras herramientas. En este proyecto puedes ver más de 100 juegos en diferentes páginas, buscar juegos por nombre, ver su descripción, filtrarlos por ubicación, ordenarlos en orden Ascendente, Descendente o por su Rating. También puedes crear juegos, actualizarlos, eliminarlos y/o guardarlos en tus favoritos.",
+        
+        "RickAndMorty": "Single Page con temática de Rick and Morty. Permite buscar personajes al azar, por id, agregarlos a favoritos, aplicar filtros, ordenamientos y eliminar personajes buscados. Las Técnologias que se utilizaron para crear esta página fueron React, Redux, Html, Css, Node Js, Express, Sequelize y PostgreSQL.",
+
+        "verPagina": "Ver el proyecto"
+    },
+
+    "Habilidades": "https://leila-salguero.vercel.app/static/media/Skills.4314ac89f2acdcede38a.mp4"
 }
