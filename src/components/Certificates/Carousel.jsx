@@ -72,7 +72,7 @@ const Carousel = () => {
 
   return (
     <div style={{ marginBottom:"500px"}}>
-      <NukaCarousel {...params} className={styles.test}>
+      <NukaCarousel {...params}>
           {certificates.map((certificate, index)=> {
               return (
                   <a href={certificate.link} key={index} className={`${styles[certificate.name]}`}>

@@ -7,7 +7,6 @@
     grid-column-gap: 50px;
     justify-content: center;
     grid-row-gap: 10px;
-    margin-bottom: 50px;
 }
 
 .contactContainer > h2 {
@@ -33,6 +32,7 @@
 
 .link {
     width: 18%;
+    min-width: 200px;
     height: 60%;
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@
 }
 
 .link > span {
-    font-size: 20px;
+    font-size: 1.1em;
     color: black;
     font-weight: 600;
 }
@@ -78,11 +78,9 @@
 }
 
 .mapResponsive {
-    overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
-    top: 30px
 }
 
 .mapResponsive iframe {
@@ -97,7 +95,7 @@
     .contactContainer {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        /* justify-content: space-around; */
     }
 
     .contactContainer > hr {
@@ -112,11 +110,16 @@
     }
 
     .link {
+        max-width: 240px;
         width: 48%;
         height: 50px;
     }
 
     .link > span {
-        font-size: 14px;
+        font-size: .8em;
+    }
+
+    .link > img {
+        width: 20%;
     }
 }
