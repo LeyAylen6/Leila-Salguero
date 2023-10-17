@@ -31,21 +31,21 @@ main {
     font-size: 0.9em;
 }
 
-.project > h4 {
+.project>h4 {
     text-align: center;
     font-size: 2rem;
 }
 
-.project > video {
+.project>video {
     width: 90%;
 }
 
-.project > p {
+.project>p {
     width: 90%;
     font-size: 1.1em;
 }
 
-.project > a {
+.project>a {
     padding-top: 10px;
     color: black;
     text-decoration: none;
@@ -53,20 +53,20 @@ main {
     text-align: center;
     width: 50%;
     height: 35px;
-    background-color: fuchsia;
+    border: solid 1px #901887;
+    color: #901887;
     border-radius: 10px;
-    box-shadow: 3px 3px rgb(0, 0, 0);
     position: relative;
-    border: none;
+    background-color: #fde8ff;
     z-index: 1;
     overflow: hidden;
     display: inline-block;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-.project > a::after {
+.project>a::after {
     content: "";
-    background: #ffadff;
+    background: radial-gradient(circle, rgb(246, 191, 245) 30%, rgb(234, 97, 230) 100%);
     position: absolute;
     z-index: -1;
     color: black;
@@ -78,14 +78,14 @@ main {
     transform: skewX(45deg) scale(0, 1);
     transition: all 0.3s ease;
 }
-    
-.project > a:hover::after {
+
+.project>a:hover::after {
     transition: all 0.3s ease-out;
     transform: skewX(45deg) scale(1, 1);
 }
-  
+
 @media only screen and (max-width: 1300px) {
-   
+
     .project {
         height: 95%;
         grid-template-rows: 10% 22% 54% 6%;
@@ -95,8 +95,8 @@ main {
 }
 
 @media only screen and (max-width: 1125px) {
-   
-    .project > h4 {
+
+    .project>h4 {
         text-align: center;
         font-size: 2em;
     }
@@ -110,11 +110,11 @@ main {
 }
 
 @media only screen and (max-width: 950px) {
-    
+
     main {
         height: max-content;
     }
-    
+
     .project {
         width: 85%;
         height: 100%;
@@ -125,16 +125,16 @@ main {
         font-size: 0.82em;
     }
 
-    .project > video {
+    .project>video {
         width: 90%;
     }
 
-    .project > h4 {
+    .project>h4 {
         font-size: 2em;
         height: 20px;
     }
 
-    .project > a {
+    .project>a {
         width: 55%;
         height: 30px;
         margin-bottom: 20px;
