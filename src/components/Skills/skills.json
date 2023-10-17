@@ -1,7 +1,7 @@
 [
     {
         "name": "Desarrollo",
-        "skills" : [
+        "skills": [
             {
                 "name": "HTML",
                 "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/html.svg"
@@ -28,7 +28,7 @@
             },
             {
                 "name": "TypeORM",
-                "image": "./../../assets/skills/css.svg"
+                "image": ""
             },
             {
                 "name": "Sequelize",
@@ -62,10 +62,10 @@
     },
     {
         "name": "Testing",
-        "skills" : [
+        "skills": [
             {
                 "name": "Zephyr",
-                "image": "html"
+                "image": ""
             },
             {
                 "name": "Selenium",
@@ -79,7 +79,7 @@
     },
     {
         "name": "Herramientas",
-        "skills" : [
+        "skills": [
             {
                 "name": "Jira",
                 "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/163e2b61038447f7503c2e45a14eca462758068d/src/assets/skills/jira.svg"
@@ -87,7 +87,7 @@
             {
                 "name": "Trello",
                 "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/163e2b61038447f7503c2e45a14eca462758068d/src/assets/skills/trello.svg"
-            }, 
+            },
             {
                 "name": "Excel",
                 "image": "css"
