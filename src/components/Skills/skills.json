@@ -28,7 +28,7 @@
             },
             {
                 "name": "TypeORM",
-                "image": ""
+                "image": "https://github.com/LeyAylen6/Leila-Salguero/blob/main/src/assets/skills/TypeORM.png?raw=true"
             },
             {
                 "name": "Sequelize",
@@ -44,7 +44,7 @@
             },
             {
                 "name": "Lombok",
-                "image": "./../../assets/skills/css.svg"
+                "image": "https://github.com/LeyAylen6/Leila-Salguero/blob/main/src/assets/skills/Lombok.png?raw=true"
             },
             {
                 "name": "React",
