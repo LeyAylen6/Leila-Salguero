@@ -57,6 +57,10 @@
             {
                 "name": "PostgreSQL",
                 "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/21bc949a9bbc021d8aa3bf3d8b024704395cd70d/src/assets/skills/postgresql.svg"
+            },
+            {
+                "name": "React Query",
+                "image": "https://github.com/LeyAylen6/Leila-Salguero/blob/main/src/assets/skills/React%20Query.png?raw=true"
             }
         ]
     },
@@ -65,7 +69,7 @@
         "skills": [
             {
                 "name": "Zephyr",
-                "image": ""
+                "image": "https://github.com/LeyAylen6/Leila-Salguero/blob/main/src/assets/skills/Zephyr.png?raw=true"
             },
             {
                 "name": "Selenium",
@@ -89,8 +93,12 @@
                 "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/163e2b61038447f7503c2e45a14eca462758068d/src/assets/skills/trello.svg"
             },
             {
+                "name": "Bitbucket",
+                "image": "https://github.com/LeyAylen6/Leila-Salguero/blob/main/src/assets/skills/Bitbucket.png?raw=true"
+            },
+            {
                 "name": "Excel",
-                "image": "css"
+                "image": "https://raw.githubusercontent.com/LeyAylen6/Leila-Salguero/a7b456d2f4a04c57171d45ea1f054d9709f15c1b/src/assets/skills/excel.svg"
             }
         ]
     }
