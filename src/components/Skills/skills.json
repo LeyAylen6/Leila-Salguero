@@ -73,11 +73,11 @@
             },
             {
                 "name": "Selenium",
-                "image": "css"
+                "image": "https://github.com/LeyAylen6/Leila-Salguero/blob/main/src/assets/skills/Selenium.png?raw=true"
             },
             {
                 "name": "Cypress",
-                "image": "css"
+                "image": "https://github.com/LeyAylen6/Leila-Salguero/blob/main/src/assets/skills/cypress.png?raw=true"
             }
         ]
     },
