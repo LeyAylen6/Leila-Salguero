@@ -1,17 +1,19 @@
 import './App.css';
-import Presentation from './components/Presentation/Presentation';
-import NavBar from './components/NavBar/NavBar';
-import Skills from './components/Skills/Skills.jsx';
-import Projects from './components/Projects/Projects';
-import Certificates from './components/Certificates/Certificates';
-import Contact from './components/Contact/Contact';
+import NavBar from './components/NavBar';
+import Presentation from './components/Presentation';
+import Projects from './components/Projects/Projects'
+import Certificates from './components/Certificates/index'
+import Contact from './components/Contact/index'
+import Skills from './components/Skills/index'
+import WorkExperience from './components/WorkExperience/index.tsx';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <NavBar />
       <Presentation />
       <Skills />
+      <WorkExperience />
       <Projects />
       <Certificates />
       <Contact />

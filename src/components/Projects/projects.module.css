@@ -22,9 +22,9 @@ main {
     display: grid;
     grid-template-rows: 13% 38% 39% 7%;
     justify-items: center;
-    box-shadow: 4px 4px fuchsia;
+    box-shadow: 4px 5px 6px rgb(254, 84, 254);
     text-align: center;
-    background-color: rgb(221, 221, 221);
+    background-color: #e6f8ff;
     border: solid 1.5px rgb(8, 8, 8);
     border-radius: 40px;
     margin-bottom: 5%;
@@ -57,7 +57,7 @@ main {
     color: #901887;
     border-radius: 10px;
     position: relative;
-    background-color: #fde8ff;
+    background-color: #fbdffd;
     z-index: 1;
     overflow: hidden;
     display: inline-block;

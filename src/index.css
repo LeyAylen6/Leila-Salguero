@@ -1,21 +1,18 @@
+* {
+  font-family: 'Poppins', sans-serif !important
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
   min-width: 400px;
   width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
   background-color: black;
-  font-family: 'Poppins', sans-serif;
-
 }
 
 code {
@@ -24,32 +21,28 @@ code {
 }
 
 h1 {
-  color: #fdb1fd;
+  color: #fdb1fd !important;
   font-size: 50px;
-  text-shadow: 3px 3px 10px rgb(255, 0, 255)
+  text-shadow: 3px 3px 10px rgb(255, 0, 255) !important
 }
 
 h2 {
-  color: #fdb1fd;
+  color: #fdb1fd !important;
   font-size: 45px;
-  text-shadow: 3px 3px 10px rgb(255, 0, 255);
-  text-align: center;
+  text-shadow: 3px 3px 10px rgb(255, 0, 255) !important;
+  text-align: center !important;
 }
 
-/* h3 {
-  color: rgb(255, 0, 255);
-} */
-
 h4 {
-  color: black;
+  color: black !important;
   font-size: 40px;
-  color: black;
-  text-shadow: 3px 3px 5px rgb(102, 102, 102);
-  margin-top: 20px;
+  color: black !important;
+  text-shadow: 3px 3px 5px rgb(102, 102, 102) !important;
+  margin-top: 20px !important;
 }
 
 @media only screen and (max-width: 600px) {
   h2 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 }
