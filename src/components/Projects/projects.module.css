@@ -1,6 +1,5 @@
 main {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,9 +17,9 @@ main {
 
 .project {
     width: 30%;
-    height: 90%;
+    height: 55rem;
     display: grid;
-    grid-template-rows: 13% 38% 39% 7%;
+    grid-template-rows: 5rem 5rem 1fr 2fr 6rem 5rem;
     justify-items: center;
     box-shadow: 4px 5px 6px rgb(254, 84, 254);
     text-align: center;
@@ -34,9 +33,14 @@ main {
 .project>h4 {
     text-align: center;
     font-size: 2rem;
+    height: 20px;
 }
 
 .project>video {
+    width: 90%;
+}
+
+.project>img {
     width: 90%;
 }
 
@@ -45,26 +49,78 @@ main {
     font-size: 1.1em;
 }
 
-.project>a {
-    padding-top: 10px;
-    color: black;
-    text-decoration: none;
-    font-size: 1.2em;
-    text-align: center;
-    width: 50%;
-    height: 35px;
+
+.projectStatus {
+    width: "100%";
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.successAlert {
+    border: 1px solid green;
+    border-radius: 10px
+}
+
+.warningAlert {
+    border: 1px solid orange;
+    border-radius: 10px
+}
+
+.tecnologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    padding-bottom: 40px;
+}
+
+.links {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.deployLink {
+    color: black !important;
+    font-size: 1.2em !important;
+    width: 60%;
+    height: 50px;
     border: solid 1px #901887;
-    color: #901887;
     border-radius: 10px;
     position: relative;
     background-color: #fbdffd;
     z-index: 1;
     overflow: hidden;
     display: inline-block;
-    font-weight: bold;
 }
 
-.project>a::after {
+.deployLink>a {
+    text-decoration: none !important;
+    color: #901887 !important;
+    font-weight: bold !important;
+    cursor: pointer;
+}
+
+.githubLoge {
+    width: 50px !important;
+    height: 50px !important;
+    color: black;
+    border-radius: 60%
+}
+
+.githubLoge:hover {
+    background-color: #fbdffd;
+    transition: .7s;
+    transform: scale(1.2);
+}
+
+.deployLink:hover {
+    transform: scale(1.05);
+    transition: .7s;
+}
+
+.deployLink::after {
     content: "";
     background: radial-gradient(circle, rgb(246, 191, 245) 30%, rgb(234, 97, 230) 100%);
     position: absolute;
@@ -79,17 +135,24 @@ main {
     transition: all 0.3s ease;
 }
 
-.project>a:hover::after {
+.deployLink:hover::after {
     transition: all 0.3s ease-out;
     transform: skewX(45deg) scale(1, 1);
+}
+
+.deployLink:disabled {
+    filter: grayscale(1);
+    color: white;
+    cursor: not-allowed;
+}
+
+.deployLink:disabled a {
+    cursor: not-allowed;
 }
 
 @media only screen and (max-width: 1300px) {
 
     .project {
-        height: 95%;
-        grid-template-rows: 10% 22% 54% 6%;
-        row-gap: 10px;
         font-size: 0.9em;
     }
 }
@@ -97,14 +160,10 @@ main {
 @media only screen and (max-width: 1125px) {
 
     .project>h4 {
-        text-align: center;
         font-size: 2em;
     }
 
     .project {
-        height: 90%;
-        grid-template-rows: 10% 21% 54% 8%;
-        row-gap: 10px;
         font-size: 0.82em;
     }
 }
@@ -126,6 +185,10 @@ main {
     }
 
     .project>video {
+        width: 90%;
+    }
+
+    .project>img {
         width: 90%;
     }
 

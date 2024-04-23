@@ -23,7 +23,7 @@ const NavBar = () => {
     name: "Work Experience",
     redirect: "#experience"
   }, {
-    name: "Proyects",
+    name: "Projects",
     redirect: "#projects"
   }, {
     name: "Certifications",
