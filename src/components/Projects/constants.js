@@ -2,6 +2,7 @@ import rickAndMorty from './../../assets/proyects/rickAndMorty.mp4'
 import henryVideogames from './../../assets/proyects/henryVideogames.mp4'
 import natureXtreme from './../../assets/proyects/NatureXtreme.mp4'
 import earthquakes from './../../assets/proyects/earthquakes.mp4'
+import stockControll from './../../assets/proyects/stockControll.mp4'
 import commingSoon from "./../../assets/proyects/commingSoon.gif"
 import node from "./../../assets/skills/node.svg"
 import react from "./../../assets/skills/react.svg"
@@ -33,15 +34,17 @@ export const projects = [
         tecnologies: [java, spring, lombok, reactNative, typeScript],
         repositoryLink: "https://github.com/LeyAylen6/nancy-store",
         deployLink: "",
+        deploy: false,
         inProgress: true
     }, {
         title: "Stock Controll",
-        image: commingSoon,
+        image: stockControll,
         description: `Proyecto de Control de Stock. Incluye creacion, modificación, eliminación y obtención de proveedores y productos`,
         tecnologies: [python, django, sqLite, bootstrap],
         repositoryLink: "https://github.com/LeyAylen6/stock-controll",
         deployLink: "",
-        inProgress: true
+        deploy: false,
+        inProgress: false
     }, {
         title: "Earthquakes",
         image: earthquakes,
@@ -49,6 +52,7 @@ export const projects = [
         tecnologies: [ruby, rubyOnRails, sqLite, typeScript, react, materialUi],
         repositoryLink: "https://github.com/LeyAylen6/earthquakes",
         deployLink: "",
+        deploy: false,
         inProgress: false
     },
     {
@@ -58,6 +62,7 @@ export const projects = [
         tecnologies: [golang, gin, typeScript, react],
         repositoryLink: "https://github.com/LeyAylen6/stock-controller",
         deployLink: "",
+        deploy: false,
         inProgress: true
     }, {
         title: "NatureXtreme",
@@ -67,6 +72,7 @@ export const projects = [
         tecnologies: [typeScript, react, node, typeOrm, postgreSQL, redux],
         repositoryLink: "https://github.com/LeyAylen6/NaturalezaXtreme",
         deployLink: "https://naturaleza-xtreme.vercel.app/",
+        deploy: true,
         inProgress: false
     }, {
         title: "Henry Videogames",
@@ -75,6 +81,7 @@ export const projects = [
         tecnologies: [javascript, react, node, express, postgreSQL, redux],
         repositoryLink: "https://github.com/LeyAylen6/Videogames",
         deployLink: "https://henry-videogames-zeta.vercel.app/",
+        deploy: true,
         inProgress: false
     }, {
         title: "Rick And Morty",
@@ -83,6 +90,7 @@ export const projects = [
         tecnologies: [javascript, react, node, express, postgreSQL, redux],
         repositoryLink: "https://github.com/LeyAylen6/Rick-Morty",
         deployLink: "https://rick-and-morty-one-tan.vercel.app/",
+        deploy: true,
         inProgress: false
     },
 ]

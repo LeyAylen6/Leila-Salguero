@@ -28,8 +28,8 @@ const Projects = () => {
 
               <div className={styles.links}>
                 <a href={project.repositoryLink} className={styles.repositoryLink}><GitHub className={styles.githubLoge} /></a>
-                <button disabled={project.inProgress} className={styles.deployLink}>
-                  <a href={project.deployLink}>Ver el Proyecto</a>
+                <button disabled={!project.deploy} className={styles.deployLink}>
+                  <a href={project.deployLink}>{project.deploy ? "Ver el Proyecto" : "Aún no publicado"}</a>
                 </button>
               </div>
             </article>
