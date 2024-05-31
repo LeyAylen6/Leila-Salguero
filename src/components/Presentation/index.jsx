@@ -3,7 +3,7 @@ import smoke from './../../assets/presentation/smoke.mp4'
 
 const Presentation = () => {
   return (
-    <seccion id='about' className={styles.presentation}>
+    <section id='about' className={styles.presentation}>
 
       <div className={styles.imLeila}>
         <video src={smoke} autoPlay muted></video>
@@ -48,7 +48,7 @@ const Presentation = () => {
 
       <div className={styles.imgContainer}></div>
 
-    </seccion>
+    </section>
   );
 }
 

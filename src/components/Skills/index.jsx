@@ -13,9 +13,9 @@ const Skills = () => {
                 {skills.map(typeSkill =>
                     <div key={typeSkill.name} className={styles.typeSkill}>
                         <span id={styles[typeSkill.name]}>{typeSkill.name}</span>
-                        {typeSkill.skills.map(skill => {
+                        {typeSkill.skills.map((skill, i) => {
                             return (
-                                <div className={styles.skill} >
+                                <div className={styles.skill} key={`${skill}-${i}`} >
                                     <img src={skill.image} />
                                     <p key={skill.name} >{skill.name}</p>
                                 </div>

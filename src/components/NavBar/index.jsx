@@ -42,10 +42,10 @@ const NavBar = () => {
       <Box className={styles.navBarBrowser}>
         {
           tabs.map((tab, i) =>
-            <>
+            <React.Fragment key={`${tab}-${i}`}>
               <a href={tab.redirect} className={styles.link}>{tab.name}</a>
               <img src={separation} />
-            </>
+            </React.Fragment>
           )
         }
       </Box>

@@ -23,7 +23,7 @@ const Projects = () => {
               <p>{project.description}</p>
 
               <div className={styles.tecnologies}>
-                {project.tecnologies.map((tecnology) => <img src={tecnology} width="10%" height="60px" />)}
+                {project.tecnologies.map((tecnology) => <img src={tecnology} width="10%" height="60px" key={tecnology} />)}
               </div>
 
               <div className={styles.links}>

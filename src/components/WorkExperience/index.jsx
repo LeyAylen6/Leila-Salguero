@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -7,6 +8,10 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+
 import java from './../../assets/skills/java.svg'
 import react from './../../assets/skills/react.svg'
 import springboot from './../../assets/skills/spring.svg'
@@ -15,9 +20,7 @@ import postgresql from './../../assets/skills/postgresql.svg'
 import typescript from './../../assets/skills/typescript.svg'
 import javascript from './../../assets/skills/javascript.svg'
 import mySql from './../../assets/skills/mySql.svg'
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
+
 import styles from "./workExperience.module.css"
 
 const experiences = [
@@ -55,7 +58,7 @@ const WorkExperience = () => {
             <Timeline position="alternate" className={styles.experienceContainer}>
                 {
                     experiences.map((experience, i) => (
-                        <TimelineItem>
+                        <TimelineItem key={`${experience}-${i}`}>
                             <TimelineSeparator>
                                 <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
                                 <TimelineDot color="secondary">
@@ -75,7 +78,7 @@ const WorkExperience = () => {
                                 </Box>
                                 <Box display="flex" className={styles.tecnologies}>
                                     {experience.tecnologies.map((tecnology) =>
-                                        <Box p={2}>
+                                        <Box p={2} key={tecnology}>
                                             <img src={tecnology} height="40rem" />
                                         </Box>
                                     )}

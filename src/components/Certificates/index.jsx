@@ -1,5 +1,12 @@
-import Carousel from "./carousel";
+import React from 'react';
+import Slider from 'react-slick';
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import styles from "./certificates.module.css"
+import "../../App.css"
+
+import { certificates, settings } from "./constants.js";
 import { useTranslation } from "react-i18next";
 
 const Certificates = () => {
@@ -8,7 +15,17 @@ const Certificates = () => {
   return (
     <div id='certifications' className={styles.certificatesContainer}>
       <h2>{t('certificates')}</h2>
-      <Carousel />
+
+      <section className="carousel-container" style={{ width: "93%", paddingBottom: "5rem" }}>
+        <Slider {...settings}>
+          {certificates.map((certificate, index) => (
+            <a href={certificate.link} key={index} className={styles.imageContainer}>
+              <img src={certificate.photo} alt={`${certificate.name} Certificate`} className={styles.image} />
+            </a>
+          ))}
+        </Slider>
+      </section>
+
     </div>
   );
 }

@@ -1,46 +1,69 @@
 .certificatesContainer {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.certificatesContainer > h1 {
+.certificatesContainer>h1 {
     text-align: center;
 }
 
-.certificatesContainer > h2 {
+.certificatesContainer>h2 {
     padding-top: 120px;
 }
 
-.images {
-    height: 800px;
-    margin-left: 248px;
+.imageContainer {
+    height: 28rem;
+    cursor: pointer;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.image {
+    width: 42rem !important;
+    height: 100%;
     cursor: pointer;
 }
 
-.java {
-    margin-left: -110px;
+.slickDots li button:before {
+    padding-top: 20px;
+    transform: scale(2);
+    color: rgb(220, 136, 225);
 }
 
-.fullStack {
-    margin-left: 80px;
-}
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
     .certificatesContainer {
-        height: 500px;
+        height: 40rem;
     }
 
-    .java {
-        margin-left: -27px;
-    }
-    
-    .fullStack {
-        margin-left: 20px;
+    .slickDots li button:before {
+        padding: 0;
     }
 
-    .images {
-        height: 200px;
-        margin-left: 45px;
+    .imageContainer {
+        height: 22rem;
+    }
+
+    .image {
+        height: 20rem !important;
     }
 }
 
- /* 900 - 700 - 400 */
+@media only screen and (max-width: 490px) {
+    .certificatesContainer {
+        height: 35rem;
+    }
+
+    .slickDots li button:before {
+        padding-top: 0;
+    }
+
+    .imageContainer {
+        height: 17rem;
+    }
+
+    .image {
+        height: 15rem !important;
+    }
+}

@@ -5,7 +5,7 @@ import Projects from './components/Projects/Projects'
 import Certificates from './components/Certificates/index'
 import Contact from './components/Contact/index'
 import Skills from './components/Skills/index'
-import WorkExperience from './components/WorkExperience/index.tsx';
+import WorkExperience from './components/WorkExperience/index.jsx';
 
 const App = () => {
   return (
