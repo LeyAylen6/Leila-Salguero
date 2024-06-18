@@ -65,6 +65,11 @@
     font-weight: 700;
 }
 
+.typeSkill>img {
+    padding-right: 10px;
+    width: 2.3em;
+}
+
 .typeSkill:hover {
     flex-grow: 1;
     flex-wrap: wrap;
@@ -73,6 +78,10 @@
 }
 
 .typeSkill:hover>span {
+    display: none;
+}
+
+.typeSkill:hover>img {
     display: none;
 }
 

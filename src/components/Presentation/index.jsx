@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const Presentation = () => {
   const { t } = useTranslation('common');
 
-  const myNameIs = t('presentation.mi_name_is', { returnObjects: true })
+  const myNameIs = t('presentation.my_name_is', { returnObjects: true })
 
   return (
     <section id='about' className={styles.presentation}>
@@ -13,9 +13,11 @@ const Presentation = () => {
       <div className={styles.imLeila}>
         <video src={smoke} autoPlay muted></video>
         <h1>
-          {myNameIs.map((letter) => (
-            <span>{letter}</span>
-          ))}
+          {myNameIs.split("").map((letter, i) =>
+            i !== 4 && i !== 10
+              ? <span>{letter}</span>
+              : <><span>&nbsp;</span> <span>{letter}</span></>
+          )}
         </h1>
 
         <h3>F U L L &nbsp;  S T A C K &nbsp; D E V E L O P E R</h3>

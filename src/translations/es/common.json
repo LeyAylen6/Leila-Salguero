@@ -8,29 +8,17 @@
         "contact": "Contacto"
     },
     "presentation": {
-        "mi_name_is": [
-            "I",
-            "'",
-            "m",
-            " ",
-            "L",
-            "e",
-            "i",
-            "l",
-            "a",
-            " ",
-            "S",
-            "a",
-            "l",
-            "g",
-            "u",
-            "e",
-            "r",
-            "o"
-        ],
+        "my_name_is": "Soy Leila Salguero",
         "description": "Hola! 😄 Mi nombre es Leila y tengo 23 años, tengo experiencia en proyectos Full Stack y de Testing QA Manual. Tengo conocimientos en metodologías ágiles y herramientas colaborativas tales como Trello y Jira. 🚀 Actualmente estoy ampliando mis habilidades en Java y Spring Boot con muchas ganas de seguír aprendiendo. Soy muy perfeccionista en todo lo que hago y siempre me esfuerzo por ofrecer soluciones. Si quieres saber más de mi, no dudes en contactarme!"
     },
-    "Habilidades": "https://leila-salguero.vercel.app/static/media/Skills.4314ac89f2acdcede38a.mp4",
+    "skills": {
+        "title": "https://leila-salguero.vercel.app/static/media/Skills.4314ac89f2acdcede38a.mp4",
+        "accordion": {
+            "development": "Desarrollo",
+            "testingQA": "Pruebas de Calidad",
+            "tools": "Herramientas"
+        }
+    },
     "work_experience": {
         "itlg_back": {
             "fromToDate": "Ene. 2024 - Jun 2024",

@@ -8,7 +8,7 @@ import styles from "./languageMenu.module.css"
 
 import { useTranslation } from 'react-i18next';
 
-const languages = [{ icon: spanish, name: "Español", value: "es" }, { icon: english, name: "English", value: "en" }]
+const languages = [{ icon: english, name: "English", value: "en" }, { icon: spanish, name: "Español", value: "es" }]
 
 const LanguageMenu = () => {
     const { i18n } = useTranslation('common')

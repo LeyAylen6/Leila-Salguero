@@ -1,6 +1,11 @@
-[
+import tools from "./../../assets/skills/tools.svg"
+import development from "./../../assets/skills/development.svg"
+import testing from "./../../assets/skills/testing.svg"
+
+export const skills = [
     {
-        "name": "Desarrollo",
+        "name": "development",
+        icon: development,
         "skills": [
             {
                 "name": "HTML",
@@ -65,7 +70,8 @@
         ]
     },
     {
-        "name": "Testing",
+        "name": "testingQA",
+        icon: testing,
         "skills": [
             {
                 "name": "Zephyr",
@@ -82,7 +88,8 @@
         ]
     },
     {
-        "name": "Herramientas",
+        "name": "tools",
+        icon: tools,
         "skills": [
             {
                 "name": "Jira",

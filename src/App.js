@@ -6,6 +6,7 @@ import Certificates from './components/Certifications/index'
 import Contact from './components/Contact/index'
 import Skills from './components/Skills/index'
 import WorkExperience from './components/WorkExperience/index.jsx';
+import SuccessModal from './components/SuccessModal/index.jsx';
 
 const App = () => {
   return (
