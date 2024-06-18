@@ -1,39 +1,107 @@
 {
-    "certificates": "My Certificates",
-    "contact": {
-        "title": "Contact",
-        "form": {
-            "subtitle": "Send me an e-mail",
-            "inputName": "Name",
-            "inputLastname": "Lastname",
-            "inputEmail": "Email",
-            "inputMessage": "Write your message here...",
-            "error": "You must complete all fields",
-            "submit": "Send"
-        }
+    "navbar": {
+        "about": "About me",
+        "skills": "Skills",
+        "work_experience": "Work Experience",
+        "projects": "Projects",
+        "certifications": "Certifications",
+        "contact": "Contact"
     },
-    "Navbar": {
-        "links": [
-            "About me",
-            "Skills",
-            "Projects",
-            "Certificates",
-            "Contact"
-        ]
-    },
-    "Presentation": {
-        "ImLeila": [
+    "presentation": {
+        "mi_name_is": [
             "I",
             "'",
-            "m"
+            "m",
+            " ",
+            "L",
+            "e",
+            "i",
+            "l",
+            "a",
+            " ",
+            "S",
+            "a",
+            "l",
+            "g",
+            "u",
+            "e",
+            "r",
+            "o"
         ],
         "description": "Hi! 😄 My name is Leila and I am 23 years old, I have experience in Full Stack projects and Testing QA. I have knowledge in agile methodologies and collaborative tools such as Trello and Jira. 🚀 I am currently expanding my Java and Spring Boot skills I really want to continue learning. I am a perfectionist in everything I do and I always strive to offer solutions. If you want to know more about me, do not hesitate to contact me!"
     },
-    "Proyectos": {
-        "NatureXtreme": "E-Commerce of clothing for outdoor activities. It has a user profile to view products, add them to favorites and make purchases and an administrator profile to control product stock, modify and create new items and see registered users in the page. It also has a blog with information on sites where you can do this type of activity. In this group project we use technologies such as Chacra UI, Typescript, Express, TypeORM, among others.",
-        "HenryVideogames": "Single Page created using React, Redux, Node Js, Express, Sequelize, PostgreSQL, among other tools. In this project you can see more than 100 games on different pages, search for games by name, see their description, filter them by location, sort them in Ascending, Descending or Rating order. You can also create games, update them, delete them and/or save them to your favourites.",
-        "RickAndMorty": "Rick and Morty themed Single Page. It allows you to search for characters randomly, by id, add them to favorites, apply filters, sorts and delete searched characters. The Technologies that were used to create this page were React, Redux, Html, Css, Node Js, Express, Sequelize and PostgreSQL.",
-        "verPagina": "See the project"
+    "Habilidades": "https://leila-salguero.vercel.app/static/media/Skills.4314ac89f2acdcede38a.mp4",
+    "work_experience": {
+        "itlg_back": {
+            "fromToDate": "Jan. 2024 - Jun 2024",
+            "resume": [
+                "● Creation and maintenance of APIs using Java and Spring Boot",
+                "● Migration of PostgreSQL Database to MySQL"
+            ]
+        },
+        "itlg_front": {
+            "fromToDate": "Aug. 2023 - Jan. 2024",
+            "resume": [
+                "Development of attractive and functional web interfaces ●",
+                "Implementation of agile methodologies ●",
+                "Connection between frontend and APIs using React-Query ●",
+                "Productive Bug Resolution Support ●"
+            ]
+        }
     },
-    "Habilidades": "https://leila-salguero.vercel.app/static/media/Skills.4314ac89f2acdcede38a.mp4"
+    "projects": {
+        "title": "My Projects",
+        "nancy_store": {
+            "description": "E-commerce in development Mobile version. The App will have the functionality of being able to make reservations for food products, assemble your cart and deposit a deposit in order to only go to pick up take away at a local warehouse when your order is ready.",
+            "status": "In Development",
+            "deploy": "Not yet published"
+        },
+        "stock_controll": {
+            "description": "Stock Control Project dedicated to purchases. It has the following views: - Home presentation, where you can choose to view the products or suppliers. - List of registered products - List of registered suppliers - Creation of products - Creation of suppliers",
+            "status": "Finished",
+            "deploy": "View the Project"
+        },
+        "earthquakes": {
+            "description": "Earthquakes is a project that is responsible for showing seismological data from around the world. Consumes data from the earthquake.usgs.gov API and persists it in its own database. It also has the creation of comments for each of the earthquakes. Although this project has a user interface, its main objective was to obtain knowledge about the technologies implemented in the Backend area.",
+            "status": "Finished",
+            "deploy": "View the Project"
+        },
+        "stock_controller": {
+            "description": "Stock Control Project for companies. It has a home section where you can view all the associated companies and create new ones. Depending on your choice on the home screen you will be redirected to create a new company or to view the movements of the selected company. In the movements section you can filter them according to various characteristics of the product, such as its code, name or brand and/or order them. Also in the products section, you can see the products associated with that company, modify them, delete them and create new ones.",
+            "status": "En Desarrollo",
+            "deploy": "Not yet published"
+        },
+        "nature_xtreme": {
+            "description": "E-Commerce of clothing for outdoor activities. It has a user profile to view products, add them to favorites and make purchases and an administrator profile to control product stock, modify and create new items and see registered users in the page. It also has a blog with information on sites where you can do this type of activity. In this group project we use technologies such as Chacra UI, Typescript, Express, TypeORM, among others.",
+            "status": "Finished",
+            "deploy": "View the Project"
+        },
+        "henry_videogames": {
+            "description": "Single Page created using React, Redux, Node Js, Express, Sequelize, PostgreSQL, among other tools. In this project you can see more than 100 games on different pages, search for games by name, see their description, filter them by location, sort them in Ascending, Descending or Rating order. You can also create games, update them, delete them and/or save them to your favourites.",
+            "status": "Finished",
+            "deploy": "View the Project"
+        },
+        "rick_and_morty": {
+            "description": "Rick and Morty themed Single Page. It allows you to search for characters randomly, by id, add them to favorites, apply filters, sorts and delete searched characters. The Technologies that were used to create this page were React, Redux, Html, Css, Node Js, Express, Sequelize and PostgreSQL.",
+            "status": "Finished",
+            "deploy": "View the Project"
+        }
+    },
+    "certificates": "My Certifications",
+    "contact": {
+        "title": "Contact me",
+        "form": {
+            "subtitle": "Send me an e-mail",
+            "name": "Name",
+            "name_placeholder": "e.g.: Leila",
+            "lastname": "Lastname",
+            "lastname_placeholder": "e.g.: Salguero",
+            "email": "Email",
+            "email_placeholder": "e.g.: example@gmail.com",
+            "message": "Message",
+            "message_placeholder": "Write your message here...",
+            "error": "You must complete all fields",
+            "submit": "Send"
+        }
+    }
 }

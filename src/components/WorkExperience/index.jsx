@@ -21,30 +21,22 @@ import typescript from './../../assets/skills/typescript.svg'
 import javascript from './../../assets/skills/javascript.svg'
 import mySql from './../../assets/skills/mySql.svg'
 
+import { useTranslation } from 'react-i18next';
+
 import styles from "./workExperience.module.css"
 
 const experiences = [
     {
+        id: "itlg_back",
         company: "ITLG",
         charge: "Backend Developer",
-        fromToDate: "Ene. 2024 - Actualidad",
-        resume: [
-            "● Creación y mantenimiento de APIs utilizando Java y SpringBoot",
-            "● Migración de Base de datos PostgreSQL a MySQL"
-        ],
         tecnologies: [java, springboot, postgresql, mySql],
         justifyContent: "start"
     },
     {
+        id: "itlg_front",
         company: "ITLG",
         charge: "Frontend Developer",
-        fromToDate: "Ago. 2023 - Ene. 2024",
-        resume: [
-            "Desarrollo de interfaces web atractivas y funcionales ●",
-            "Implementación de metodologías ágiles ●",
-            "Conexión entre frontend y APIs utilizando React-Query ●",
-            "Soporte para la resolución de Bugs productivos ●"
-        ],
         tecnologies: [react, reactQuery, javascript, typescript],
         justifyContent: "end"
     }
@@ -52,6 +44,8 @@ const experiences = [
 ]
 
 const WorkExperience = () => {
+    const { t } = useTranslation('common');
+
     return (
         <Box id="experience">
             <h2>Experiencia Laboral</h2>
@@ -70,10 +64,10 @@ const WorkExperience = () => {
                                 <Typography fontSize="30px" component="span" color="white" fontWeight="bold">
                                     {`${experience.company} - ${experience.charge}`}
                                 </Typography>
-                                <Typography color="pink">{experience.fromToDate}</Typography>
+                                <Typography color="pink">{t(`work_experience.${experience.id}.fromToDate`)}</Typography>
                                 <Box color="white">
                                     <List>
-                                        {experience.resume.map((resume, i) => <ListItem key={i}>{resume}</ListItem >)}
+                                        {t(`work_experience.${experience.id}.resume`, { returnObjects: true }).map((resume, i) => <ListItem key={i}>{resume}</ListItem >)}
                                     </List>
                                 </Box>
                                 <Box display="flex" className={styles.tecnologies}>

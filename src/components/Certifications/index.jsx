@@ -3,13 +3,13 @@ import Slider from 'react-slick';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from "./certificates.module.css"
+import styles from "./certifications.module.css"
 import "../../App.css"
 
-import { certificates, settings } from "./constants.js";
+import { certifications, settings } from "./constants.js";
 import { useTranslation } from "react-i18next";
 
-const Certificates = () => {
+const Certifications = () => {
   const { t } = useTranslation('common');
 
   return (
@@ -18,7 +18,7 @@ const Certificates = () => {
 
       <section className="carousel-container" style={{ width: "93%", paddingBottom: "5rem" }}>
         <Slider {...settings}>
-          {certificates.map((certificate, index) => (
+          {certifications.map((certificate, index) => (
             <a href={certificate.link} key={index} className={styles.imageContainer}>
               <img src={certificate.photo} alt={`${certificate.name} Certificate`} className={styles.image} />
             </a>
@@ -30,4 +30,4 @@ const Certificates = () => {
   );
 }
 
-export default Certificates;
+export default Certifications;
