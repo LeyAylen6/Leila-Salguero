@@ -1,35 +1,40 @@
+import { useState, Fragment } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import styles from './navBar.module.css'
+
 import separation from './../../assets/navbarSeparation.svg'
-import LanguageMenu from './LanguageMenu';
+import LanguageMenu from './LanguageMenu/index';
 import MobileMenu from './MobileMenu';
-import * as React from 'react';
+
 import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Box } from '@mui/material';
 
 const NavBar = () => {
+  const { t } = useTranslation('common');
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const toggleDrawer = (newOpen) => () => setOpen(newOpen);
 
   const tabs = [{
-    name: "About",
+    id: "about",
     redirect: "#about"
   }, {
-    name: "Skills",
+    id: "skills",
     redirect: "#skills"
   }, {
-    name: "Work Experience",
+    id: "work_experience",
     redirect: "#experience"
   }, {
-    name: "Projects",
+    id: "projects",
     redirect: "#projects"
   }, {
-    name: "Certifications",
+    id: "certifications",
     redirect: "#certifications"
   }, {
-    name: "Contact",
+    id: "contact",
     redirect: "#contact"
   }]
 
@@ -40,14 +45,14 @@ const NavBar = () => {
       </Button>
 
       <Box className={styles.navBarBrowser}>
-        {
-          tabs.map((tab, i) =>
-            <React.Fragment key={`${tab}-${i}`}>
-              <a href={tab.redirect} className={styles.link}>{tab.name}</a>
-              <img src={separation} />
-            </React.Fragment>
-          )
-        }
+        {tabs.map((tab) =>
+          <Fragment key={tab.id}>
+            <a href={tab.redirect} className={styles.link}>
+              {t(`navbar.${tab.id}`)}
+            </a>
+            <img src={separation} />
+          </Fragment>
+        )}
       </Box>
 
       <MobileMenu open={open} toggleDrawer={toggleDrawer} tabs={tabs} />

@@ -1,6 +1,10 @@
 import style from './form.module.css';
+
 import { useState } from 'react';
+
 import * as emailjs from 'emailjs-com'
+
+import { useTranslation } from 'react-i18next';
 
 const initialState = {
     name: '',
@@ -11,6 +15,7 @@ const initialState = {
 
 const Form = () => {
     const [state, setState] = useState(initialState)
+    const { t } = useTranslation('common');
 
     const handleChange = (e) => {
         setState({
@@ -37,14 +42,65 @@ const Form = () => {
         setState(initialState)
     }
 
+    const formInputs = [
+        {
+            id: "name",
+            name: "name",
+            type: 'text'
+        }, {
+            id: "lastname",
+            name: "lastname",
+            type: 'text'
+        }, {
+            id: "email",
+            name: "email",
+            type: 'text'
+        }, {
+            id: "message",
+            name: "message",
+            type: 'textarea'
+        }
+    ]
+
     return (
         <form className={style.formContainer} onSubmit={sendMessage} >
-            <h2>Enviame un email</h2>
-            <input className={style.nameInput} placeholder='Name' name='name' value={state.name} onChange={handleChange} />
-            <input className={style.lastNameInput} placeholder='Lastname' name='lastname' value={state.lastname} onChange={handleChange} />
-            <input className={style.emailInput} placeholder='Email' name='email' value={state.email} onChange={handleChange} />
-            <textarea className={style.messageInput} placeholder='Message' name='message' value={state.message} onChange={handleChange} />
-            <button type='submit' disabled={!state.name || !state.lastname || !state.email || !state.message}>Submit</button>
+            <h2>{t('contact.title')}</h2>
+
+            {formInputs.map((input) => (
+                <div key={input.id}>
+                    <label htmlFor={input.name}>
+                        {t(`contact.form.${input.id}`)}
+                    </label>
+
+                    {input.type == 'text'
+                        ? <input
+                            className={style[input.name]}
+                            placeholder={t(`contact.form.${input.name}_placeholder`)}
+                            name={input.name}
+                            value={state[input.name]}
+                            onChange={handleChange}
+                        />
+                        : <textarea
+                            className={style.message}
+                            placeholder={t('contact.form.message_placeholder')}
+                            name='message' value={state.message}
+                            onChange={handleChange}
+                        />}
+                </div>
+            ))}
+
+            {/* <div>
+                
+                <label htmlFor='message'>{t(`contact.form.message`)}</label>
+                <textarea
+                    className={style.message}
+                    placeholder={t('contact.form.message_placeholder')}
+                    name='message' value={state.message}
+                    onChange={handleChange}
+                />
+            </div> */}
+
+            <button type='submit' disabled={!state.name || !state.lastname || !state.email || !state.message}>{t('contact.form.submit')}</button>
         </form>
     )
 }

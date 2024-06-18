@@ -28,27 +28,27 @@ import bootstrap from "./../../assets/skills/bootstrap.svg"
 
 export const projects = [
     {
+        id: "nancy_store",
         title: "Nancy Store",
         image: commingSoon,
-        description: `E-commerce version Mobile. App para reservas de compras y retiros con take away en almacen local`,
         tecnologies: [java, spring, lombok, reactNative, typeScript],
         repositoryLink: "https://github.com/LeyAylen6/nancy-store",
         deployLink: "",
         deploy: false,
         inProgress: true
     }, {
+        id: "stock_controll",
         title: "Stock Controll",
         image: stockControll,
-        description: `Proyecto de Control de Stock. Incluye creacion, modificación, eliminación y obtención de proveedores y productos`,
         tecnologies: [python, django, sqLite, bootstrap],
         repositoryLink: "https://github.com/LeyAylen6/stock-controll",
         deployLink: "",
         deploy: false,
         inProgress: false
     }, {
+        id: "earthquakes",
         title: "Earthquakes",
         image: earthquakes,
-        description: `Earthquakes es un proyecto que se encarga de mostrar datos sismológicos de todo el mundo. Consume datos de la api de "earthquake.usgs.gov" y los persiste en la base de datos propia. Ademas cuenta con la creación de comentarios de cada uno de los terremotos. Si bien este proyecto cuenta con una interfaz de usuario su principal objetivo fue obtener conocimientos sobre las tecnologías implementadas en el area Backend.`,
         tecnologies: [ruby, rubyOnRails, sqLite, typeScript, react, materialUi],
         repositoryLink: "https://github.com/LeyAylen6/earthquakes",
         deployLink: "",
@@ -56,37 +56,36 @@ export const projects = [
         inProgress: false
     },
     {
+        id: "stock_controller",
         title: "Stock Controller",
         image: commingSoon,
-        description: `Proyecto de Control de Stock de empresas. Incluye creacion, modificación, eliminación y obtención de movimientos, empresas y productos`,
         tecnologies: [golang, gin, typeScript, react],
         repositoryLink: "https://github.com/LeyAylen6/stock-controller",
         deployLink: "",
         deploy: false,
         inProgress: true
     }, {
+        id: "nature_xtreme",
         title: "NatureXtreme",
         image: natureXtreme,
-        description: `E-Commerce de ropa para actividades al aire Libre.
-          Cuenta con un perfil de usuario para ver productos, agregarlos a favoritos y realizar compras y un perfil de administrador para controlar stock de productos, modificar y crear nuevos articulos y ver los usuarios registrados en la página. Además cuenta con un blog con información sobre sitios en los cuales podes realizar este tipo de actividades. En este proyecto grupal utilizamos tecnologías tales como Chacra UI, Typescript, Express, TypeORM, entre otras.`,
         tecnologies: [typeScript, react, node, typeOrm, postgreSQL, redux],
         repositoryLink: "https://github.com/LeyAylen6/NaturalezaXtreme",
         deployLink: "https://naturaleza-xtreme.vercel.app/",
         deploy: true,
         inProgress: false
     }, {
+        id: "henry_videogames",
         title: "Henry Videogames",
         image: henryVideogames,
-        description: `Single Page creada utilizando React, Redux, Node Js, Express, Sequelize, PostgreSQL, entre otras herramientas. En este proyecto puedes ver más de 100 juegos en diferentes páginas, buscar juegos por nombre, ver su descripción, filtrarlos por ubicación, ordenarlos en orden Ascendente, Descendente o por su Rating. También puedes crear juegos, actualizarlos, eliminarlos y/o guardarlos en tus favoritos.`,
         tecnologies: [javascript, react, node, express, postgreSQL, redux],
         repositoryLink: "https://github.com/LeyAylen6/Videogames",
         deployLink: "https://henry-videogames-zeta.vercel.app/",
         deploy: true,
         inProgress: false
     }, {
+        id: "rick_and_morty",
         title: "Rick And Morty",
         image: rickAndMorty,
-        description: `Single Page con temática de Rick and Morty. Permite buscar personajes al azar, por id, agregarlos a favoritos, aplicar filtros, ordenamientos y eliminar personajes buscados. Las Técnologias que se utilizaron para crear esta página fueron React, Redux, Html, Css, Node Js, Express, Sequelize y PostgreSQL.`,
         tecnologies: [javascript, react, node, express, postgreSQL, redux],
         repositoryLink: "https://github.com/LeyAylen6/Rick-Morty",
         deployLink: "https://rick-and-morty-one-tan.vercel.app/",

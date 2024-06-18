@@ -1,14 +1,14 @@
 
-import styles from './certificates.module.css';
+import styles from './certifications.module.css';
 
-import Java from '../../assets/certificates/Java.jpeg';
-import Scrum from '../../assets/certificates/Scrum.png';
-import Testing from '../../assets/certificates/Testing.jpeg';
-import FullStack from '../../assets/certificates/Certificado Full Stack.jpeg'
-import SpringBoot from '../../assets/certificates/SpringBoot.jpeg'
-import python from '../../assets/certificates/python.jpeg'
+import Java from '../../assets/certifications/Java.jpeg';
+import Scrum from '../../assets/certifications/Scrum.png';
+import Testing from '../../assets/certifications/Testing.jpeg';
+import FullStack from '../../assets/certifications/Certificado Full Stack.jpeg'
+import SpringBoot from '../../assets/certifications/SpringBoot.jpeg'
+import python from '../../assets/certifications/python.jpeg'
 
-export const certificates = [
+export const certifications = [
     {
         name: 'fullStack',
         photo: FullStack,
