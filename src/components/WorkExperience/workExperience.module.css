@@ -1,16 +1,20 @@
-.experienceContainer>li:nth-child(2n) li {
+.experiencesContainer {
+    padding-top: 100px;
+}
+
+.experiences>li:nth-child(2n) li {
     display: flex;
     justify-content: end;
     text-align: end;
     padding-left: 50px;
 }
 
-.experienceContainer>li:nth-child(2n - 1) li {
+.experiences>li:nth-child(2n - 1) li {
     display: flex;
     justify-content: start;
 }
 
-.experienceContainer>li:nth-child(2n) .tecnologies {
+.experiences>li:nth-child(2n) .tecnologies {
     display: flex;
     justify-content: end;
 }

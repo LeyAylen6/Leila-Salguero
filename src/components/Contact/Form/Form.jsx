@@ -1,17 +1,11 @@
-import style from './form.module.css';
-
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import * as emailjs from 'emailjs-com'
 
-import { useTranslation } from 'react-i18next';
+import style from './form.module.css';
 
-const initialState = {
-    name: '',
-    lastname: '',
-    email: '',
-    message: ''
-}
+import { formInputs, initialState } from '../constants';
 
 const Form = () => {
     const [state, setState] = useState(initialState)
@@ -42,29 +36,9 @@ const Form = () => {
         setState(initialState)
     }
 
-    const formInputs = [
-        {
-            id: "name",
-            name: "name",
-            type: 'text'
-        }, {
-            id: "lastname",
-            name: "lastname",
-            type: 'text'
-        }, {
-            id: "email",
-            name: "email",
-            type: 'text'
-        }, {
-            id: "message",
-            name: "message",
-            type: 'textarea'
-        }
-    ]
-
     return (
         <form className={style.formContainer} onSubmit={sendMessage} >
-            <h2>{t('contact.title')}</h2>
+            <h2>{t('contact.form.subtitle')}</h2>
 
             {formInputs.map((input) => (
                 <div key={input.id}>
@@ -72,7 +46,7 @@ const Form = () => {
                         {t(`contact.form.${input.id}`)}
                     </label>
 
-                    {input.type == 'text'
+                    {input.type === 'text'
                         ? <input
                             className={style[input.name]}
                             placeholder={t(`contact.form.${input.name}_placeholder`)}

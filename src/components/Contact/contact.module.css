@@ -78,9 +78,9 @@
 }
 
 .mapResponsive {
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
-    height: 72%;
+    height: 80%;
 }
 
 .mapResponsive iframe {

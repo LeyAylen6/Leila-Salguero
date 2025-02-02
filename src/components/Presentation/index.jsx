@@ -1,6 +1,7 @@
 import styles from './presentation.module.css';
 import smoke from './../../assets/presentation/smoke.mp4'
 import { useTranslation } from 'react-i18next';
+import WavesAnimation from '../WavesAnimation/index.jsx'
 
 const Presentation = () => {
   const { t } = useTranslation('common');
@@ -28,6 +29,8 @@ const Presentation = () => {
 
       </div>
       <div className={styles.imgContainer} />
+
+      <WavesAnimation waveBackground={styles.waveBackground} bottomPositionWave={styles.bottomPositionWave}></WavesAnimation>
     </section>
   );
 }

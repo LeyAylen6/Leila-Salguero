@@ -1,12 +1,11 @@
 .formContainer {
     width: 80%;
-    height: 500px;
     display: grid;
     padding-left: 50px;
     grid-template-columns: 50% 50%;
     row-gap: 15px;
     column-gap: 30px;
-    grid-template-rows: 40px repeat(2, 60px) 120px 50px;
+    grid-template-rows: 40px repeat(2, 70px) 120px 50px;
 }
 
 .formContainer>h2 {
@@ -30,6 +29,7 @@
 .formContainer>div>label {
     color: white;
     text-align: start;
+    padding-left: 10px;
 }
 
 .formContainer>div>input {

@@ -47,9 +47,9 @@ const WorkExperience = () => {
     const { t } = useTranslation('common');
 
     return (
-        <Box id="experience">
+        <div id="experience" className={styles.experiencesContainer}>
             <h2>Experiencia Laboral</h2>
-            <Timeline position="alternate" className={styles.experienceContainer}>
+            <Timeline position="alternate" className={styles.experiences}>
                 {
                     experiences.map((experience, i) => (
                         <TimelineItem key={`${experience}-${i}`}>
@@ -73,7 +73,7 @@ const WorkExperience = () => {
                                 <Box display="flex" className={styles.tecnologies}>
                                     {experience.tecnologies.map((tecnology) =>
                                         <Box p={2} key={tecnology}>
-                                            <img src={tecnology} height="40rem" />
+                                            <img src={tecnology} height="40rem" alt={tecnology} />
                                         </Box>
                                     )}
                                 </Box>
@@ -82,7 +82,7 @@ const WorkExperience = () => {
                     ))
                 }
             </Timeline>
-        </Box>
+        </div>
     );
 };
 
