@@ -25,7 +25,6 @@ const Certifications = () => {
           ))}
         </Slider>
       </section>
-
     </div>
   );
 }

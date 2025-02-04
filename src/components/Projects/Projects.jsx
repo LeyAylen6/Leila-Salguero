@@ -3,6 +3,7 @@ import { GitHub } from '@mui/icons-material'
 import { projects } from "./constants"
 import { Alert } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import commingSoon from './../../assets/proyects/commingSoon.gif'
 
 const Projects = () => {
   const { t } = useTranslation('common');
@@ -15,17 +16,38 @@ const Projects = () => {
         {projects.map((project) =>
           <article className={styles.project} key={project.title}>
             <h4>{project.title}</h4>
-            <div className={styles.projectStatus}>
-              {project.inProgress
-                ? <Alert severity='warning' className={styles.warningAlert}>{t(`projects.${project.id}.status`)}</Alert>
-                : <Alert severity='success' className={styles.successAlert}>{t(`projects.${project.id}.status`)}</Alert>
-              }
+            <div className={styles.proyectType}>
+              <div>
+                <Alert severity="info" variant='filled' className={styles.type}>{t(`projects.${project.id}.type`)}</Alert>
+              </div>
+
+              <div className={styles.projectStatus}>
+                {project.inProgress
+                  ? <Alert severity='warning' className={styles.warningAlert}>{t(`projects.${project.id}.status`)}</Alert>
+                  : <Alert severity='success' className={styles.successAlert}>{t(`projects.${project.id}.status`)}</Alert>
+                }
+              </div>
             </div>
-            {project.inProgress ? <img src={project.image} alt={project.title} /> : <video src={project.image} controls />}
+
+            {project.videoId
+              ? <iframe
+                width="520"
+                height="275"
+                src={`https://www.youtube.com/embed/${project.videoId}`}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              : <img src={commingSoon} alt={project.title} />
+            }
+
             <p>{t(`projects.${project.id}.description`)}</p>
 
             <div className={styles.tecnologies}>
-              {project.tecnologies.map((tecnology) => <img src={tecnology} width="10%" height="60px" alt={tecnology} key={tecnology} />)}
+              {project.tecnologies.map((tecnology) =>
+                <img src={tecnology} width="10%" height="50px" alt={tecnology} key={tecnology} />
+              )}
             </div>
 
             <div className={styles.links}>
@@ -33,8 +55,8 @@ const Projects = () => {
                 <GitHub className={styles.githubLoge} />
               </a>
 
-              <button disabled={!project.deploy} className={styles.deployLink}>
-                <a href={project.deployLink}>
+              <button disabled={!project.deployLink} className={styles.deployLink}>
+                <a href={project.deployLink} target='blank'>
                   {t(`projects.${project.id}.deploy`)}
                 </a>
               </button>
