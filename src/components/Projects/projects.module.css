@@ -30,6 +30,16 @@ main {
     font-size: 0.9em;
 }
 
+.proyectType {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.type {
+    background-color: #d44dcb !important;
+}
+
 .project>h4 {
     text-align: center;
     font-size: 2rem;
@@ -58,12 +68,10 @@ main {
 
 .successAlert {
     border: 1px solid green;
-    border-radius: 10px
 }
 
 .warningAlert {
     border: 1px solid orange;
-    border-radius: 10px
 }
 
 .tecnologies {
@@ -72,6 +80,10 @@ main {
     justify-content: space-around;
     width: 90%;
     padding-bottom: 40px;
+}
+
+.tecnologies>img {
+    margin-bottom: 10px;
 }
 
 .links {

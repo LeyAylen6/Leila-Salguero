@@ -39,40 +39,71 @@
     },
     "projects": {
         "title": "Mis Proyectos",
-        "nancy_store": {
-            "description": "E-commerce version Mobile. App para reservas de compras y retiros con take away en almacen local",
-            "status": "En Desarrollo",
-            "deploy": "Aún no publicado"
-        },
-        "stock_controll": {
-            "description": "Proyecto de Control de Stock dedicado a compras. Cuenta con las siguientes vistas: - Home de presentación, donde podes elegír visualizar los productos o proveedores. - Listado de productos registrados - Listado de proveedores registrados - Creación de productos - Creación de proveedores",
+        "tutor_ia": {
+            "type": "Proyecto en equipo",
+            "description": "TutorIA es una aplicación educativa que usa inteligencia artificial para personalizar el aprendizaje, permitiendo a los usuarios avanzar a su propio ritmo con recomendaciones y actividades interactivas. Desarrollada con una arquitectura de microservicios, utiliza Angular para el frontend, Java para el backend y Python para la inteligencia artificial. La IA se basa en el modelo de lenguaje avanzado NVIDIA Nemotron y FastAPI para crear APIs eficientes, adaptando el contenido a las necesidades de cada usuario y ofreciendo una experiencia de aprendizaje personalizada y escalable.",
             "status": "Finalizado",
             "deploy": "Ver el Proyecto"
         },
-        "earthquakes": {
-            "description": "Earthquakes es un proyecto que se encarga de mostrar datos sismológicos de todo el mundo. Consume datos de la api de earthquake.usgs.gov y los persiste en la base de datos propia. Ademas cuenta con la creación de comentarios de cada uno de los terremotos. Si bien este proyecto cuenta con una interfaz de usuario su principal objetivo fue obtener conocimientos sobre las tecnologías implementadas en el area Backend.",
-            "status": "Finalizado",
-            "deploy": "Ver el Proyecto"
-        },
-        "stock_controller": {
-            "description": "Proyecto de Control de Stock para empresas. Cuenta con una seccion home donde podrá visualizar todas las empresas asociadas y podrá crear nuevas. Segun su elección en la pantalla home será redirigido a crear una nueva compañia o a ver los movimientos de la compañia seleccionada. En la sección de movimientos podrá filtrar los mismos segun varias caracteristicas del producto, tales como su codigo, nombre o marca y/o ordenarlos. Además en la sección de productos, podrá ver los productos asociados a esa compañia, modificarlos, eliminarlos y crear nuevos.",
-            "status": "En Desarrollo",
-            "deploy": "Aún no publicado"
-        },
-        "nature_xtreme": {
-            "description": "E-Commerce de ropa para actividades al aire Libre.Cuenta con un perfil de usuario para ver productos, agregarlos a favoritos y realizar compras y un perfil de administrador para controlar stock de productos, modificar y crear nuevos articulos y ver los usuarios registrados en la página. Además cuenta con un blog con información sobre sitios en los cuales podes realizar este tipo de actividades. En este proyecto grupal utilizamos tecnologías tales como Chacra UI, Typescript, Express, TypeORM, entre otras.",
+        "sushi_chatbot": {
+            "type": "Desafío Técnico",
+            "description": "Sushi Chatbot es un proyecto que implementa un chatbot para un restaurante de sushi, utilizando inteligencia artificial de Cohere para responder preguntas frecuentes de manera más interactiva y dinámica. Los usuarios pueden ver el menú, realizar pedidos y consultar dudas frecuentes. El chatbot es capaz de entender consultas relacionadas con pedidos, ingredientes, disponibilidad, entre otros. Está construido con Node.js, React, MongoDB. Además, el modelo de Cohere se integra para ofrecer respuestas más naturales y precisas a los usuarios.",
             "status": "Finalizado",
             "deploy": "Ver el Proyecto"
         },
         "henry_videogames": {
+            "type": "Proyecto individual",
             "description": "Single Page creada utilizando React, Redux, Node Js, Express, Sequelize, PostgreSQL, entre otras herramientas. En este proyecto puedes ver más de 100 juegos en diferentes páginas, buscar juegos por nombre, ver su descripción, filtrarlos por ubicación, ordenarlos en orden Ascendente, Descendente o por su Rating. También puedes crear juegos, actualizarlos, eliminarlos y/o guardarlos en tus favoritos.",
             "status": "Finalizado",
             "deploy": "Ver el Proyecto"
         },
         "rick_and_morty": {
+            "type": "Proyecto individual",
             "description": "Single Page con temática de Rick and Morty. Permite buscar personajes al azar, por id, agregarlos a favoritos, aplicar filtros, ordenamientos y eliminar personajes buscados. Las Técnologias que se utilizaron para crear esta página fueron React, Redux, Html, Css, Node Js, Express, Sequelize y PostgreSQL.",
             "status": "Finalizado",
             "deploy": "Ver el Proyecto"
+        },
+        "nature_xtreme": {
+            "type": "Proyecto en equipo",
+            "description": "E-Commerce de ropa para actividades al aire Libre.Cuenta con un perfil de usuario para ver productos, agregarlos a favoritos y realizar compras y un perfil de administrador para controlar stock de productos, modificar y crear nuevos articulos y ver los usuarios registrados en la página. Además cuenta con un blog con información sobre sitios en los cuales podes realizar este tipo de actividades. En este proyecto grupal utilizamos tecnologías tales como Chacra UI, Typescript, Express, TypeORM, entre otras.",
+            "status": "Finalizado",
+            "deploy": "Ver el Proyecto"
+        },
+        "stock_controller": {
+            "type": "Proyecto en equipo",
+            "description": "Proyecto de Control de Stock para empresas. Cuenta con una seccion home donde podrá visualizar todas las empresas asociadas y podrá crear nuevas. Segun su elección en la pantalla home será redirigido a crear una nueva compañia o a ver los movimientos de la compañia seleccionada. En la sección de movimientos podrá filtrar los mismos segun varias caracteristicas del producto, tales como su codigo, nombre o marca y/o ordenarlos. Además en la sección de productos, podrá ver los productos asociados a esa compañia, modificarlos, eliminarlos y crear nuevos.",
+            "status": "En Desarrollo",
+            "deploy": "Aún no publicado"
+        },
+        "paycash_people": {
+            "type": "Desafío Técnico",
+            "description": "Implementa una API RESTful para gestionar un catálogo de personas, permitiendo realizar operaciones CRUD (crear, leer, actualizar, eliminar). Utiliza los patrones CQRS y Mediator para gestionar el flujo de datos de manera eficiente. El backend está construido con Node.js, Express y Sequelize, mientras que el frontend está desarrollado con React.js. Los datos se almacenan en una base de datos MySQL desplegada en AWS RDS. El proyecto también incluye una configuración de Docker para despliegue local, proporcionando una forma fácil de ejecutar la API en un entorno containerizado.",
+            "status": "Finalizado",
+            "deploy": "Ver el Proyecto"
+        },
+        "people_manager": {
+            "type": "Desafío Técnico",
+            "description": "Proyecto de gestión de usuarios que proporciona una API RESTful para listar y crear usuarios. Cuenta con un backend desarrollado en Java con Spring Boot y un frontend en React.js. El proyecto no utiliza una base de datos, ya que, según lo solicitado en el desafío, los datos se almacenan en memoria. Aunque incluye una interfaz de usuario, su objetivo principal fue desarrollar una API sencilla para la gestión de usuarios.",
+            "status": "Finalizado",
+            "deploy": "Aún no publicado"
+        },
+        "nancy_store": {
+            "type": "Proyecto en equipo",
+            "description": "E-commerce version Mobile. App para reservas de compras y retiros con take away en almacen local",
+            "status": "En Desarrollo",
+            "deploy": "Aún no publicado"
+        },
+        "stock_controll": {
+            "type": "Proyecto individual",
+            "description": "Proyecto de Control de Stock dedicado a compras. Cuenta con las siguientes vistas: - Home de presentación, donde podes elegír visualizar los productos o proveedores. - Listado de productos registrados - Listado de proveedores registrados - Creación de productos - Creación de proveedores",
+            "status": "Finalizado",
+            "deploy": "Aún no publicado"
+        },
+        "earthquakes": {
+            "type": "Desafío Técnico",
+            "description": "Earthquakes es un proyecto que se encarga de mostrar datos sismológicos de todo el mundo. Consume datos de la api de earthquake.usgs.gov y los persiste en la base de datos propia. Ademas cuenta con la creación de comentarios de cada uno de los terremotos. Si bien este proyecto cuenta con una interfaz de usuario su principal objetivo fue obtener conocimientos sobre las tecnologías implementadas en el area Backend.",
+            "status": "Finalizado",
+            "deploy": "Aún no publicado"
         }
     },
     "certificates": "Mis Certificaciones",

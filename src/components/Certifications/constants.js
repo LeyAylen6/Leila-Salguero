@@ -1,37 +1,37 @@
 
 import styles from './certifications.module.css';
 
-import Java from '../../assets/certifications/Java.jpeg';
-import Scrum from '../../assets/certifications/Scrum.png';
-import Testing from '../../assets/certifications/Testing.jpeg';
-import FullStack from '../../assets/certifications/Certificado Full Stack.jpeg'
-import SpringBoot from '../../assets/certifications/SpringBoot.jpeg'
+import java from '../../assets/certifications/java.jpeg';
+import scrum from '../../assets/certifications/scrum.png';
+import testing from '../../assets/certifications/testing.jpeg';
+import fullStack from '../../assets/certifications/fullstack.jpeg'
+import springBoot from '../../assets/certifications/springboot.jpeg'
 import python from '../../assets/certifications/python.jpeg'
+import advancedJava from '../../assets/certifications/advanced-java.jpeg'
 
 export const certifications = [
     {
         name: 'fullStack',
-        photo: FullStack,
+        photo: fullStack,
+    }, {
+        name: 'advancedJava',
+        photo: advancedJava
     }, {
         name: 'python',
         photo: python
-    },
-    {
+    }, {
         name: 'testing',
-        photo: Testing,
+        photo: testing,
         link: "https://www.credly.com/badges/0e90cb83-98f5-4b82-b1d1-47b878554c9b"
-    },
-    {
+    }, {
         name: 'java',
-        photo: Java,
-    },
-    {
+        photo: java,
+    }, {
         name: 'springBoot',
-        photo: SpringBoot
-    },
-    {
+        photo: springBoot
+    }, {
         name: 'scrum',
-        photo: Scrum,
+        photo: scrum,
         link: "https://www.credly.com/earner/earned/badge/4436b233-98bf-4cdf-b2f5-0a7dceb2b2ff"
     },
 ];
