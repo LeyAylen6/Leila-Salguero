@@ -73,7 +73,7 @@ const WorkExperience = () => {
                                 <Box display="flex" className={styles.tecnologies}>
                                     {experience.tecnologies.map((tecnology) =>
                                         <Box p={2} key={tecnology}>
-                                            <img src={tecnology} height="40rem" />
+                                            <img src={tecnology} height="40rem" alt='Technology Logo' />
                                         </Box>
                                     )}
                                 </Box>

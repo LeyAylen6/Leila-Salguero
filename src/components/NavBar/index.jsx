@@ -50,7 +50,7 @@ const NavBar = () => {
             <a href={tab.redirect} className={styles.link}>
               {t(`navbar.${tab.id}`)}
             </a>
-            <img src={separation} />
+            <img src={separation} alt='Separation line' />
           </Fragment>
         )}
       </Box>

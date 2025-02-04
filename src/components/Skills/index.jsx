@@ -18,7 +18,7 @@ const Skills = () => {
                 {skills.map((typeSkill) =>
                     <div key={typeSkill.name} className={styles.typeSkill}>
                         <>
-                            <img src={typeSkill.icon} />
+                            <img src={typeSkill.icon} alt='Skill Logo' />
                             <span id={styles[typeSkill.name]}>
                                 {t(`skills.accordion.${typeSkill.name}`)}
                             </span>
@@ -27,7 +27,7 @@ const Skills = () => {
                         {typeSkill.skills.map((skill, i) => {
                             return (
                                 <div className={styles.skill} key={`${skill}-${i}`} >
-                                    <img src={skill.image} />
+                                    <img src={skill.image} alt='Skill Logo' />
                                     <p key={skill.name} >{skill.name}</p>
                                 </div>
                             )
