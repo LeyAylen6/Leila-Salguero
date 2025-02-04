@@ -13,6 +13,7 @@
 
 .imLeila {
     width: 60%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +72,6 @@
 }
 
 @keyframes animate {
-
     0% {
         opacity: 0;
         transform: rotateY(90deg);
@@ -174,24 +174,38 @@
 }
 
 .imgContainer {
-    width: 21%;
-    height: 750px;
-    opacity: 0;
-    background-color: rgb(11, 11, 11);
-    overflow: hidden;
-    display: inline-block;
-    animation: animate 4s linear forwards;
-    -webkit-animation: animate 1s linear forwards;
-    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
-    animation-delay: 4s;
-    background-image: url('./../../assets/presentation/profil2.png');
-    background-position-x: -180px;
-    background-size: 780px 750px;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 1000px) {
+.img {
+    margin-top: 10%;
+    background-image: url('./../../assets/presentation/profil2.png');
+    background-size: 300px 300px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 
+    /* animation: animate 4s linear forwards;
+    -webkit-animation: animate 1s linear forwards; */
+    transform: scale(1.5);
+}
+
+.downloadLink {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    box-shadow: 10px 10px rgb(198, 24, 193);
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
     .presentation {
         display: flex;
         flex-direction: column;
@@ -217,14 +231,8 @@
         top: 180px;
     }
 
-    .imgContainer {
-        background-size: 340px 340px;
-        background-position-x: 0px;
-        clip-path: none;
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        margin-top: 30px;
+    .img {
+        transform: scale(1.2);
     }
 
     .imLeila>h3 {
@@ -246,7 +254,7 @@
         font-size: 30px !important;
     }
 
-    .imgContainer {
+    .img {
         margin-top: 100px;
     }
 }

@@ -23,7 +23,7 @@ const MobileMenu = ({ open, toggleDrawer, tabs }) => {
             <ListItem key={tab.id} disablePadding>
               <ListItemButton href={tab.redirect}>
                 <ListItemIcon>
-                  <img src={star} width="30px" height="30px" />
+                  <img src={star} width="30px" height="30px" alt='Star logo' />
                 </ListItemIcon>
                 <ListItemText primary={t(`navbar.${tab.id}`)} />
               </ListItemButton>

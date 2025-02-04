@@ -23,11 +23,18 @@ const Presentation = () => {
         <h3>F U L L &nbsp;  S T A C K &nbsp; D E V E L O P E R</h3>
 
         <p>{t('presentation.description')}</p>
-
-        {/* <a href='../../assets/presentation/cv.pdf' download='Leila Salguero - Full Stack Developer'>Descarga mi CV</a> */}
-
       </div>
-      <div className={styles.imgContainer} />
+
+      <div className={styles.imgContainer}>
+        <div className={styles.img} />
+
+        <a href="https://drive.google.com/uc?export=download&id=1wt7EM6rJyoLNWmKU2LYggp4-KqfKOxP6"
+          download
+          className={styles.downloadLink}
+        >
+          {t('presentation.download_cv')}
+        </a>
+      </div>
     </section>
   );
 }
