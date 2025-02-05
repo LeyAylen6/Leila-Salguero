@@ -1,8 +1,8 @@
 
 import styles from './certifications.module.css';
 
-import java from './../../assets/certifications/java.jpeg';
 import scrum from '../../assets/certifications/scrum.png';
+import java from '../../assets/certifications/testing.jpeg';
 import testing from '../../assets/certifications/testing.jpeg';
 import fullStack from '../../assets/certifications/fullstack.jpeg'
 import springBoot from '../../assets/certifications/springboot.jpeg'
