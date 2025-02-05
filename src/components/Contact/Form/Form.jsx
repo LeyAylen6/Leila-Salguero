@@ -72,7 +72,7 @@ const Form = () => {
                         {t(`contact.form.${input.id}`)}
                     </label>
 
-                    {input.type == 'text'
+                    {input.type === 'text'
                         ? <input
                             className={style[input.name]}
                             placeholder={t(`contact.form.${input.name}_placeholder`)}

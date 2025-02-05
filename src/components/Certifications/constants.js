@@ -2,12 +2,12 @@
 import styles from './certifications.module.css';
 
 import scrum from '../../assets/certifications/scrum.png';
-import java from '../../assets/certifications/testing.jpeg';
+import advancedJava from '../../assets/certifications/advanced-java.jpeg'
+import java from '../../assets/certifications/java.jpeg';
 import testing from '../../assets/certifications/testing.jpeg';
 import fullStack from '../../assets/certifications/fullstack.jpeg'
 import springBoot from '../../assets/certifications/springboot.jpeg'
 import python from '../../assets/certifications/python.jpeg'
-import advancedJava from '../../assets/certifications/advanced-java.jpeg'
 
 export const certifications = [
     {
