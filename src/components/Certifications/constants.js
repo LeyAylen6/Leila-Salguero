@@ -1,7 +1,7 @@
 
 import styles from './certifications.module.css';
 
-import java from '../../assets/certifications/java.jpeg';
+import java from './../../assets/certifications/java.jpeg';
 import scrum from '../../assets/certifications/scrum.png';
 import testing from '../../assets/certifications/testing.jpeg';
 import fullStack from '../../assets/certifications/fullstack.jpeg'
