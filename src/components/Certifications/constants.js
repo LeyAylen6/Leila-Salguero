@@ -3,7 +3,7 @@ import styles from './certifications.module.css';
 
 import advancedJava from '../../assets/certifications/advanced-java.jpeg'
 import java from '../../assets/certifications/java.jpeg';
-import testing from '../../assets/certifications/testing.jpeg';
+//import testing from '../../assets/certifications/testing.jpeg';
 import fullStack from '../../assets/certifications/fullstack.jpeg'
 import springBoot from '../../assets/certifications/springboot.jpeg'
 import python from '../../assets/certifications/python.jpeg'
@@ -21,7 +21,7 @@ export const certifications = [
         photo: python
     }, {
         name: 'testing',
-        photo: testing,
+        photo: python,
         link: "https://www.credly.com/badges/0e90cb83-98f5-4b82-b1d1-47b878554c9b"
     }, {
         name: 'java',
