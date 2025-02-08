@@ -2,7 +2,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Presentation from './components/Presentation';
 import Projects from './components/Projects/Projects'
-import Certificates from './components/Certifications/index'
+// import Certificates from './components/Certifications/index'
 import Contact from './components/Contact/index'
 import Skills from './components/Skills/index'
 import WorkExperience from './components/WorkExperience/index.jsx'
@@ -15,7 +15,7 @@ const App = () => {
       <Skills />
       <WorkExperience />
       <Projects />
-      <Certificates />
+      {/* <Certificates /> */}
       <Contact />
     </div>
   );

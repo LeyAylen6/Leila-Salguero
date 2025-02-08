@@ -17,13 +17,13 @@ const Certifications = () => {
       <h2>{t('certificates')}</h2>
 
       <section className="carousel-container" style={{ width: "93%", paddingBottom: "5rem" }}>
-        <Slider {...settings}>
+        {/* <Slider {...settings}>
           {certifications.map((certificate, index) => (
             <a href={certificate.link} key={index} className={styles.imageContainer}>
               <img src={certificate.photo} alt={`${certificate.name} Certificate`} className={styles.image} />
             </a>
           ))}
-        </Slider>
+        </Slider> */}
       </section>
     </div>
   );
