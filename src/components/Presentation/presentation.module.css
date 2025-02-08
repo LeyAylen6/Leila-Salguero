@@ -1,7 +1,7 @@
 .presentation {
     padding-top: 100px;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 80%; */
     display: flex;
     justify-content: space-evenly;
     background-image: url('./../../assets/commons/pinkBackground.svg');
@@ -13,7 +13,6 @@
 
 .imLeila {
     width: 60%;
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,8 +22,8 @@
 .imLeila>p {
     text-align: center;
     color: white;
-    width: 60%;
-    height: 60%;
+    width: 90%;
+    height: 50%;
     font-size: 20px;
     display: block;
     opacity: 0;
@@ -178,6 +177,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    height: 90vh;
 }
 
 .img {
