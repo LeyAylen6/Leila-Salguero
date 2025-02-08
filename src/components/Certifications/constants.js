@@ -7,7 +7,7 @@ import FullStack from '../../assets/certifications/Fullstack.jpeg'
 import SpringBoot from '../../assets/certifications/SpringBoot.jpeg'
 import Python from '../../assets/certifications/Python.jpeg'
 import Scrum from '../../assets/certifications/Scrum.png'
-import AdvancedJava from '../../assets/certifications/AdvancedJava.jpeg'
+// import AdvancedJava from '../../assets/certifications/AdvancedJava.jpeg'
 
 export const certifications = [
     {
@@ -15,7 +15,7 @@ export const certifications = [
         photo: FullStack,
     }, {
         name: 'advancedJava',
-        photo: AdvancedJava
+        photo: FullStack
     }, {
         name: 'python',
         photo: Python
