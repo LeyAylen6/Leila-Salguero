@@ -1,13 +1,13 @@
 
 import styles from './certifications.module.css';
 
-import AdvancedJava from '../../assets/certifications/advanced-java.jpeg'
-import Java from '../../assets/certifications/java.jpeg';
-import Testing from '../../assets/certifications/testing.jpeg';
-import FullStack from '../../assets/certifications/fullstack.jpeg'
-import SpringBoot from '../../assets/certifications/springboot.jpeg'
-import Python from '../../assets/certifications/python.jpeg'
-import Scrum from '../../assets/certifications/scrum.png'
+import AdvancedJava from '../../assets/certifications/AdvancedJava.jpeg'
+import Java from '../../assets/certifications/Java.jpeg';
+import Testing from '../../assets/certifications/Testing.jpeg';
+import FullStack from '../../assets/certifications/Fullstack.jpeg'
+import SpringBoot from '../../assets/certifications/SpringBoot.jpeg'
+import Python from '../../assets/certifications/Python.jpeg'
+import Scrum from '../../assets/certifications/Scrum.png'
 
 export const certifications = [
     {
