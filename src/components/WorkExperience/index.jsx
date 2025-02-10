@@ -12,33 +12,34 @@ import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
-import java from './../../assets/skills/java.svg'
-import react from './../../assets/skills/react.svg'
-import springboot from './../../assets/skills/spring.svg'
-import reactQuery from './../../assets/skills/React Query.png'
-import postgresql from './../../assets/skills/postgresql.svg'
-import typescript from './../../assets/skills/typescript.svg'
-import javascript from './../../assets/skills/javascript.svg'
-import mySql from './../../assets/skills/mySql.svg'
-
 import { useTranslation } from 'react-i18next';
 
 import styles from "./workExperience.module.css"
+import { resources } from '../Skills/constants';
+
+const { java, springBoot, postgreSQL, mySql, react, reactQuery, javascript, typescript } = resources;
 
 const experiences = [
+    {
+        id: "leafnoise_back",
+        company: "Leafnoise",
+        charge: "Backend Developer SSR",
+        tecnologies: [java, springBoot],
+        justifyContent: "start"
+    },
     {
         id: "itlg_back",
         company: "ITLG",
         charge: "Backend Developer",
-        tecnologies: [java, springboot, postgresql, mySql],
-        justifyContent: "start"
+        tecnologies: [java, springBoot, postgreSQL, mySql],
+        justifyContent: "end"
     },
     {
         id: "itlg_front",
         company: "ITLG",
         charge: "Frontend Developer",
         tecnologies: [react, reactQuery, javascript, typescript],
-        justifyContent: "end"
+        justifyContent: "start"
     }
 
 ]
