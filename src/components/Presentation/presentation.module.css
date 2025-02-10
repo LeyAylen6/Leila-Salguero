@@ -1,7 +1,5 @@
 .presentation {
     padding-top: 100px;
-    /* width: 100%;
-    height: 80%; */
     display: flex;
     justify-content: space-evenly;
     background-image: url('./../../assets/commons/pinkBackground.svg');
