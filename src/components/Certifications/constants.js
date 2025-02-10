@@ -1,37 +1,29 @@
 
 import styles from './certifications.module.css';
 
-import Java from '../../assets/certifications/Java.jpeg';
-import Testing from '../../assets/certifications/Testing.jpeg';
-import FullStack from '../../assets/certifications/Certificado Full Stack.jpeg'
-import SpringBoot from '../../assets/certifications/SpringBoot.jpeg'
-import Scrum from '../../assets/certifications/Scrum.png'
-import AdvancedJava from '../../assets/certifications/AdvancedJava.jpeg'
-import python from '../../assets/certificates/python.jpeg'
-
 export const certificates = [
     {
         name: 'fullStack',
-        photo: FullStack,
+        photo: 'https://res.cloudinary.com/dn3tgaige/image/upload/v1739198389/Portfolio/Certifications/Certificado_Full_Stack_t4glsu.jpg',
     }, {
         name: 'advancedJava',
-        photo: AdvancedJava
+        photo: 'https://res.cloudinary.com/dn3tgaige/image/upload/v1739198389/Portfolio/Certifications/AdvancedJava_vzauzk.jpg'
     }, {
         name: 'python',
-        photo: python
+        photo: 'https://res.cloudinary.com/dn3tgaige/image/upload/v1739198390/Portfolio/Certifications/python_y1pqnw.jpg'
     }, {
         name: 'testing',
-        photo: Testing,
+        photo: 'https://res.cloudinary.com/dn3tgaige/image/upload/v1739198391/Portfolio/Certifications/Testing_o6usso.jpg',
         link: "https://www.credly.com/badges/0e90cb83-98f5-4b82-b1d1-47b878554c9b"
     }, {
         name: 'java',
-        photo: Java,
+        photo: 'https://res.cloudinary.com/dn3tgaige/image/upload/v1739198389/Portfolio/Certifications/Java_yzodi0.jpg',
     }, {
         name: 'springBoot',
-        photo: SpringBoot
+        photo: 'https://res.cloudinary.com/dn3tgaige/image/upload/v1739198390/Portfolio/Certifications/SpringBoot_aisjvg.jpg'
     }, {
         name: 'scrum',
-        photo: Scrum,
+        photo: 'https://res.cloudinary.com/dn3tgaige/image/upload/v1739198391/Portfolio/Certifications/Scrum_x2dt7b.jpg',
         link: "https://www.credly.com/earner/earned/badge/4436b233-98bf-4cdf-b2f5-0a7dceb2b2ff"
     },
 ];
