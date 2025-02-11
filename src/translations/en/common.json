@@ -21,6 +21,11 @@
         }
     },
     "work_experience": {
+        "title": "Work Experience",
+        "leafnoise_back": {
+            "fromToDate": "Feb. 2025 - Actually",
+            "resume": []
+        },
         "itlg_back": {
             "fromToDate": "Jan. 2024 - Jun 2024",
             "resume": [

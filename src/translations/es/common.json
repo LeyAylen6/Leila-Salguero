@@ -21,6 +21,11 @@
         }
     },
     "work_experience": {
+        "title": "Experiencia Laboral",
+        "leafnoise_back": {
+            "fromToDate": "Feb. 2025 - Actualidad",
+            "resume": []
+        },
         "itlg_back": {
             "fromToDate": "Ene. 2024 - Jun 2024",
             "resume": [
