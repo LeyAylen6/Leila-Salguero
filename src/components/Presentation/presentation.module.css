@@ -1,16 +1,15 @@
 .presentation {
-    padding-top: 100px;
+    padding-top: 110px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    background-image: url('./../../assets/commons/pinkBackground.svg');
-    background-size: cover;
-    padding-bottom: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
+    align-items: center;
+    background-color: #000000;
+    padding-bottom: 20px;
 }
 
 .imLeila {
-    width: 60%;
+    width: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,12 +20,116 @@
     text-align: center;
     color: white;
     width: 90%;
-    height: 50%;
     font-size: 20px;
     display: block;
     opacity: 0;
     animation: reveal 1s forwards;
     animation-delay: 3.7s;
+    margin-bottom: 10px;
+}
+
+.rightCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.actionsCol {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 260px;
+    opacity: 0;
+    animation: reveal 0.8s forwards;
+    animation-delay: 3.9s;
+}
+
+.primaryCta,
+.secondaryCta,
+.downloadLink {
+    padding: 10px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.primaryCta {
+    background: linear-gradient(135deg, #fbdffd 0%, #ff6bd5 100%);
+    color: #1b1b1b;
+    box-shadow: 0 6px 18px rgba(255, 107, 213, 0.3);
+}
+
+.primaryCta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(255, 107, 213, 0.45);
+}
+
+.secondaryCta {
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    background: transparent;
+}
+
+.secondaryCta:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.quickStats {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 45px 0 0;
+    padding: 0;
+    width: 90%;
+    opacity: 0;
+    animation: reveal 0.8s forwards;
+    animation-delay: 4.1s;
+}
+
+.statCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 10px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+}
+
+.statValue {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.statLabel {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.downloadLink {
+    border: 1.5px solid rgba(253, 177, 253, 0.5);
+    color: #fdb1fd;
+    background: transparent;
+}
+
+.downloadLink:hover {
+    transform: translateY(-2px);
+    background: rgba(253, 177, 253, 0.1);
+    border-color: #fdb1fd;
 }
 
 @keyframes reveal {
@@ -41,7 +144,7 @@
 }
 
 .imLeila>video {
-    margin-top: 20px;
+    margin-top: -40px;
     object-fit: cover;
     height: 40%;
     width: 100%;
@@ -159,8 +262,8 @@
 }
 
 .imLeila>h3 {
-    margin-top: -100px;
-    height: 100px;
+    margin-top: -180px;
+    height: 60px;
     color: fuchsia;
     font-size: 30px;
     font-weight: lighter;
@@ -174,40 +277,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 90vh;
+    justify-content: center;
 }
 
 .img {
-    margin-top: 10%;
-    background-image: url('./../../assets/presentation/profil2.png');
-    background-size: 300px 300px;
-    width: 300px;
-    height: 300px;
+    background-image: url('./../../assets/presentation/profile.png');
+    background-size: 380px 380px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
-
-    /* animation: animate 4s linear forwards;
-    -webkit-animation: animate 1s linear forwards; */
-    transform: scale(1.5);
-}
-
-.downloadLink {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 50px;
-    box-shadow: 10px 10px rgb(198, 24, 193);
-    color: black;
-    text-decoration: none;
-    font-size: 25px;
-    text-align: center;
-    padding-top: 10px;
+    opacity: 0;
+    animation: animate 1.5s ease forwards;
+    animation-delay: 1s;
 }
 
 @media only screen and (max-width: 1100px) {
     .presentation {
-        display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 30px;
     }
 
     .imLeila {
@@ -230,7 +318,9 @@
     }
 
     .img {
-        transform: scale(1.2);
+        background-size: 260px 260px;
+        width: 260px;
+        height: 260px;
     }
 
     .imLeila>h3 {
@@ -242,7 +332,20 @@
     .imLeila>p {
         width: 90%;
         font-size: 16px;
-        height: 200px;
+    }
+
+    .quickStats {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .rightCol {
+        margin-top: 30px;
+    }
+
+    .actionsCol {
+        width: 80%;
+        max-width: 320px;
     }
 }
 
@@ -252,7 +355,16 @@
         font-size: 30px !important;
     }
 
-    .img {
-        margin-top: 100px;
+    .quickStats {
+        gap: 20px;
+    }
+
+    .statCard {
+        padding: 10px 14px;
+    }
+
+    .actionsCol {
+        width: 90%;
+        max-width: 280px;
     }
 }
