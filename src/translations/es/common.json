@@ -9,8 +9,13 @@
     },
     "presentation": {
         "my_name_is": "Soy Leila Salguero",
-        "description": "✨ Full Stack Developer con 1 año de experiencia formal, especializada en Java, Spring Boot y React. He trabajado en proyectos tanto en Frontend como en Backend, desarrollando APIs REST, gestionando bases de datos y creando interfaces web intuitivas. ✅ Me apasiona el desarrollo Backend, por lo que actualmente estoy ampliando mis conocimientos en Golang, Gin y AWS Cloud, con muchas ganas de seguir aprendiendo y creciendo en el mundo IT. Me considero una persona perfeccionista y dedicada, siempre asegurándome de que cada detalle esté cuidadosamente revisado para ofrecer soluciones de calidad. 🚀",
-        "download_cv": "Descargar mi CV"
+        "description": "Full Stack Developer con 3 años de experiencia construyendo aplicaciones web y APIs escalables con Java, Spring Boot, Go y React. Apasionada por el Backend, la calidad del código y la mejora continua. Perfeccionista y dedicada, siempre buscando entregar soluciones robustas y bien diseñadas.",
+        "download_cv": "Descargar mi CV",
+        "cta_primary": "Ver proyectos destacados",
+        "cta_secondary": "Contactar",
+        "stats_projects": "Proyectos reales",
+        "stats_technologies": "Stacks dominados",
+        "stats_roles": "Roles profesionales"
     },
     "skills": {
         "title": "https://leila-salguero.vercel.app/static/media/Skills.4314ac89f2acdcede38a.mp4",
@@ -42,6 +47,33 @@
                 "Soporte para la resolución de Bugs productivos ●"
             ]
         }
+    },
+    "open_to_work": "Disponible para trabajar",
+    "highlights": {
+        "title": "Por qué trabajar conmigo",
+        "subtitle": "Fortalezas clave que aporto a cada equipo y proyecto",
+        "items": [
+            {
+                "icon": "🏗️",
+                "title": "Visión Full Stack",
+                "description": "Construyo de punta a punta: desde APIs REST con Java/Spring Boot hasta interfaces React responsivas."
+            },
+            {
+                "icon": "🤖",
+                "title": "Integración con IA",
+                "description": "Experiencia práctica con NVIDIA Nemotron, Cohere y FastAPI para funcionalidades inteligentes."
+            },
+            {
+                "icon": "☁️",
+                "title": "Cloud & DevOps",
+                "description": "AWS RDS, Docker y pipelines CI/CD. Actualmente profundizando en AWS Cloud."
+            },
+            {
+                "icon": "🎯",
+                "title": "Enfocada en Calidad",
+                "description": "Background en Testing & QA. Cada detalle revisado, cada caso borde considerado."
+            }
+        ]
     },
     "projects": {
         "title": "Mis Proyectos",
@@ -128,5 +160,8 @@
             "error": "Debe completar todos los campos",
             "submit": "Enviar"
         }
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados."
     }
 }
