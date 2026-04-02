@@ -1,5 +1,5 @@
 .presentation {
-    padding-top: 110px;
+    padding-top: 140px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -10,10 +10,12 @@
 
 .imLeila {
     width: 55%;
+    min-height: 520px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .imLeila>p {
@@ -144,23 +146,25 @@
 }
 
 .imLeila>video {
-    margin-top: -40px;
+    margin-top: 0;
     object-fit: cover;
-    height: 40%;
+    height: 280px;
     width: 100%;
+    mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
 }
 
 .imLeila>h1 {
     padding: 0;
     position: absolute;
-    margin-top: -5px;
-    top: 50%;
+    margin: 0;
+    top: 20%;
     transform: translateY(-50%);
-    width: 75%;
-    height: 50%;
+    width: 85%;
+    height: auto;
     text-align: center;
     color: #ddd;
-    font-size: 4.6em;
+    font-size: clamp(2.6rem, 4.2vw, 4.6em);
     letter-spacing: .1em;
 }
 
@@ -262,7 +266,7 @@
 }
 
 .imLeila>h3 {
-    margin-top: -180px;
+    margin-top: -20px;
     height: 60px;
     color: fuchsia;
     font-size: 30px;
@@ -302,19 +306,25 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        height: 400px;
+        height: auto;
+        min-height: 350px;
     }
 
     .imLeila>video {
         margin: 0;
-        height: 100px;
+        height: 200px;
+        mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+        -webkit-mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
     }
 
     .imLeila>h1 {
         width: 90%;
-        height: 50px;
+        height: auto;
         font-size: 40px !important;
-        top: 180px;
+        position: relative;
+        top: auto;
+        transform: none;
+        margin-top: -140px;
     }
 
     .img {
@@ -324,9 +334,10 @@
     }
 
     .imLeila>h3 {
-        padding-top: 120px;
+        margin-top: 8px;
+        padding-top: 0;
         font-size: 20px;
-        height: 30px;
+        height: auto;
     }
 
     .imLeila>p {
@@ -352,11 +363,16 @@
 @media only screen and (max-width: 600px) {
 
     .imLeila>h1 {
-        font-size: 30px !important;
+        font-size: 28px !important;
+        margin-top: -130px;
+    }
+
+    .imLeila>h3 {
+        font-size: 16px;
     }
 
     .quickStats {
-        gap: 20px;
+        gap: 12px;
     }
 
     .statCard {

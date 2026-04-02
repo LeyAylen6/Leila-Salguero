@@ -9,6 +9,7 @@
 
 .highlights {
     width: 100%;
+    box-sizing: border-box;
     padding: 80px 5% 180px;
     display: flex;
     flex-direction: column;
@@ -125,6 +126,7 @@
 
     .highlights {
         padding: 60px 4% 100px;
+        margin-top: 30px;
     }
 
     .waveBottom svg {

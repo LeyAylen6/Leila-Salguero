@@ -11,7 +11,7 @@ const Presentation = () => {
     <section id='about' className={styles.presentation}>
 
       <div className={styles.imLeila}>
-        <video src={smoke} autoPlay muted></video>
+        <video src={smoke} autoPlay muted loop></video>
         <h1 key={myNameIs}>
           {myNameIs.split("").map((letter, i) =>
             i !== 4 && i !== 10
