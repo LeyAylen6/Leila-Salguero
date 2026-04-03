@@ -18,11 +18,24 @@
         "stats_roles": "Roles profesionales"
     },
     "skills": {
-        "title": "https://leila-salguero.vercel.app/static/media/Skills.4314ac89f2acdcede38a.mp4",
+        "title": "Habilidades",
         "accordion": {
             "development": "Desarrollo",
-            "testingQA": "Pruebas de Calidad",
-            "tools": "Herramientas"
+            "databases": "Bases de datos",
+            "testingQA": "Testing",
+            "tools": "Herramientas",
+            "monitoring": "Monitoreo",
+            "aiTools": "Herramientas IA",
+            "devops": "DevOps & Cloud"
+        },
+        "description": {
+            "development": "Lenguajes, frameworks y bases de datos que uso para construir aplicaciones escalables.",
+            "databases": "Bases de datos relacionales, no relacionales y ORMs que uso para gestionar datos.",
+            "testingQA": "Herramientas que uso para garantizar la calidad del software y prevenir regresiones.",
+            "tools": "Plataformas en las que me apoyo para gestión de proyectos y colaboración en equipo.",
+            "monitoring": "Herramientas de observabilidad para rastrear rendimiento y detectar incidentes.",
+            "aiTools": "Herramientas potenciadas con IA que mejoran mi productividad y calidad de código.",
+            "devops": "Herramientas de cloud e infraestructura para desplegar y escalar aplicaciones."
         }
     },
     "work_experience": {
@@ -77,6 +90,10 @@
     },
     "projects": {
         "title": "Mis Proyectos",
+        "subtitle": "Selección curada con foco en impacto, stack y resultados. Abajo están todos los proyectos para ver el detalle completo.",
+        "featured_title": "Destacados",
+        "featured_badge": "Top",
+        "all_title": "Todos los proyectos",
         "tutor_ia": {
             "type": "Proyecto en equipo",
             "description": "TutorIA es una aplicación educativa que usa inteligencia artificial para personalizar el aprendizaje, permitiendo a los usuarios avanzar a su propio ritmo con recomendaciones y actividades interactivas. Desarrollada con una arquitectura de microservicios, utiliza Angular para el frontend, Java para el backend y Python para la inteligencia artificial. La IA se basa en el modelo de lenguaje avanzado NVIDIA Nemotron y FastAPI para crear APIs eficientes, adaptando el contenido a las necesidades de cada usuario y ofreciendo una experiencia de aprendizaje personalizada y escalable.",
