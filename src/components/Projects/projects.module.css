@@ -1,231 +1,259 @@
-main {
+.projectsSection {
     width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background: #000000;
+    padding: 72px 5% 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
 }
 
-.projectsContainer {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
+.bgGlow {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 55% 35% at 15% 20%, rgba(253, 177, 253, 0.07) 0%, transparent 55%),
+        radial-gradient(ellipse 45% 30% at 85% 70%, rgba(180, 80, 255, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
 }
 
-.project {
-    width: 30%;
-    height: 55rem;
+.header {
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 40px;
+    max-width: 720px;
+}
+
+.title {
+    font-size: 2.6rem;
+    color: #fdb1fd !important;
+    text-shadow: 0 0 20px rgba(255, 0, 255, 0.35) !important;
+    margin: 0 0 16px;
+}
+
+.projectsGrid {
     display: grid;
-    grid-template-rows: 5rem 5rem 1fr 2fr 6rem 5rem;
-    justify-items: center;
-    box-shadow: 4px 5px 6px rgb(254, 84, 254);
-    text-align: center;
-    background-color: #e6f8ff;
-    border: solid 1.5px rgb(8, 8, 8);
-    border-radius: 40px;
-    margin-bottom: 5%;
-    font-size: 0.9em;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+    gap: 28px;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 1;
 }
 
-.proyectType {
+.card {
     display: flex;
-    justify-content: space-evenly;
-    width: 90%;
+    flex-direction: column;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 22px 20px 20px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.type {
-    background-color: #d44dcb !important;
+.card:hover {
+    border-color: rgba(253, 177, 253, 0.35);
+    box-shadow: 0 16px 40px rgba(255, 0, 255, 0.12);
+    transform: translateY(-4px);
 }
 
-.project>h4 {
+.cardTop {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.cardTitle {
+    margin: 0 !important;
+    font-size: 1.35rem !important;
+    color: #fdb1fd !important;
+    text-shadow: 0 0 12px rgba(255, 0, 255, 0.25) !important;
     text-align: center;
-    font-size: 2rem;
-    height: 20px;
+    line-height: 1.25;
 }
 
-.project>iframe {
-    width: 90%;
-    height: 280px
-}
-
-.project>img {
-    width: 90%;
-}
-
-.project>p {
-    width: 90%;
-    font-size: 1.1em;
-}
-
-
-.projectStatus {
-    width: "100%";
-    height: 100%;
-    padding-bottom: 20px;
-}
-
-.successAlert {
-    border: 1px solid green;
-}
-
-.warningAlert {
-    border: 1px solid orange;
-}
-
-.tecnologies {
+.badges {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 90%;
-    padding-bottom: 40px;
+    gap: 8px;
+    justify-content: center;
 }
 
-.tecnologies>img {
-    margin-bottom: 10px;
+.badgeType,
+.badgeStatusOk,
+.badgeStatusWarn {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.badgeType {
+    background: rgba(253, 177, 253, 0.12);
+    color: #fdb1fd;
+    border-color: rgba(253, 177, 253, 0.35);
+}
+
+.badgeStatusOk {
+    background: rgba(46, 160, 67, 0.15);
+    color: #7ee787;
+    border-color: rgba(46, 160, 67, 0.35);
+}
+
+.badgeStatusWarn {
+    background: rgba(210, 153, 34, 0.15);
+    color: #e3b341;
+    border-color: rgba(210, 153, 34, 0.4);
+}
+
+.mediaWrap {
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.35);
+    margin-bottom: 16px;
+    aspect-ratio: 16 / 9;
+}
+
+.iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.placeholderImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.description {
+    flex: 1;
+    margin: 0 0 16px;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.68);
+    text-align: center;
+}
+
+.techRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.techIcon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
 }
 
 .links {
     display: flex;
-    width: 70%;
-    justify-content: space-evenly;
-    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: auto;
+    padding-top: 4px;
 }
 
-.deployLink {
-    color: black !important;
-    font-size: 1.2em !important;
-    width: 60%;
-    height: 50px;
-    border: solid 1px #901887;
-    border-radius: 10px;
-    position: relative;
-    background-color: #fbdffd;
-    z-index: 1;
-    overflow: hidden;
-    display: inline-block;
+.repoLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.85);
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
-.deployLink>a {
-    text-decoration: none !important;
-    color: #901887 !important;
-    font-weight: bold !important;
-    cursor: pointer;
+.repoLink:hover {
+    background: rgba(253, 177, 253, 0.12);
+    border-color: rgba(253, 177, 253, 0.45);
+    transform: scale(1.06);
 }
 
-.githubLoge {
-    width: 50px !important;
-    height: 50px !important;
-    color: black;
-    border-radius: 60%
+.githubIcon {
+    width: 26px !important;
+    height: 26px !important;
 }
 
-.githubLoge:hover {
-    background-color: #fbdffd;
-    transition: .7s;
-    transform: scale(1.2);
+.deployBtn {
+    flex: 1;
+    max-width: 220px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 12px 18px;
+    border-radius: 999px;
+    color: #1b1b1b !important;
+    background: linear-gradient(135deg, #fbdffd 0%, #ff6bd5 100%);
+    box-shadow: 0 6px 18px rgba(255, 107, 213, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.deployLink:hover {
-    transform: scale(1.05);
-    transition: .7s;
+.deployBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(255, 107, 213, 0.4);
 }
 
-.deployLink::after {
-    content: "";
-    background: radial-gradient(circle, rgb(246, 191, 245) 30%, rgb(234, 97, 230) 100%);
-    position: absolute;
-    z-index: -1;
-    color: black;
-    display: block;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(45deg) scale(0, 1);
-    transition: all 0.3s ease;
-}
-
-.deployLink:hover::after {
-    transition: all 0.3s ease-out;
-    transform: skewX(45deg) scale(1, 1);
-}
-
-.deployLink:disabled {
-    filter: grayscale(1);
-    color: white;
+.deployBtnDisabled {
+    flex: 1;
+    max-width: 220px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.88rem;
+    padding: 12px 18px;
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     cursor: not-allowed;
 }
 
-.deployLink:disabled a {
-    cursor: not-allowed;
-}
-
-@media only screen and (max-width: 1300px) {
-
-    .project {
-        font-size: 0.9em;
+@media only screen and (max-width: 768px) {
+    .projectsSection {
+        padding: 56px 4% 72px;
     }
 
-    .project>iframe {
-        height: 180px
-    }
-}
-
-@media only screen and (max-width: 1125px) {
-
-    .project>h4 {
-        font-size: 2em;
+    .title {
+        font-size: 2rem;
     }
 
-    .project {
-        font-size: 0.82em;
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .projectsGrid {
+        gap: 22px;
     }
 }
 
-@media only screen and (max-width: 950px) {
-
-    main {
-        height: max-content;
+@media only screen and (max-width: 480px) {
+    .title {
+        font-size: 1.75rem;
     }
 
-    .project {
-        width: 85%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-        font-size: 0.82em;
-    }
-
-    .project>iframe {
-        height: 350px
-    }
-
-    s .project>h4 {
-        font-size: 2em;
-        height: 20px;
-    }
-
-    .project>a {
-        width: 55%;
-        height: 30px;
-        margin-bottom: 20px;
-    }
-}
-
-
-@media only screen and (max-width: 700px) {
-    .project>iframe {
-        height: 250px
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .project>iframe {
-        height: 180px
+    .techIcon {
+        width: 32px;
+        height: 32px;
     }
 }

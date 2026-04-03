@@ -1,70 +1,99 @@
-import styles from './projects.module.css'
-import { GitHub } from '@mui/icons-material'
-import { projects } from "./constants"
-import { Alert } from '@mui/material';
+import styles from './projects.module.css';
+import { GitHub } from '@mui/icons-material';
+import { projects } from './constants';
 import { useTranslation } from 'react-i18next';
-import commingSoon from './../../assets/proyects/commingSoon.gif'
+import commingSoon from './../../assets/proyects/commingSoon.gif';
 
 const Projects = () => {
   const { t } = useTranslation('common');
 
   return (
-    <main id='projects'>
+    <section id="projects" className={styles.projectsSection}>
+      <div className={styles.bgGlow} aria-hidden="true" />
 
-      <h2>{t('projects.title')}</h2>
-      <section className={styles.projectsContainer}>
-        {projects.map((project) =>
-          <article className={styles.project} key={project.title}>
-            <h4>{project.title}</h4>
-            <div className={styles.proyectType}>
-              <div>
-                <Alert severity="info" variant='filled' className={styles.type}>{t(`projects.${project.id}.type`)}</Alert>
-              </div>
+      <header className={styles.header}>
+        <h2 className={styles.title}>{t('projects.title')}</h2>
+      </header>
 
-              <div className={styles.projectStatus}>
-                {project.inProgress
-                  ? <Alert severity='warning' className={styles.warningAlert}>{t(`projects.${project.id}.status`)}</Alert>
-                  : <Alert severity='success' className={styles.successAlert}>{t(`projects.${project.id}.status`)}</Alert>
-                }
+      <div className={styles.projectsGrid}>
+        {projects.map((project) => (
+          <article className={styles.card} key={project.title}>
+            <div className={styles.cardTop}>
+              <h3 className={styles.cardTitle}>{project.title}</h3>
+              <div className={styles.badges}>
+                <span className={styles.badgeType}>{t(`projects.${project.id}.type`)}</span>
+                <span
+                  className={
+                    project.inProgress ? styles.badgeStatusWarn : styles.badgeStatusOk
+                  }
+                >
+                  {t(`projects.${project.id}.status`)}
+                </span>
               </div>
             </div>
 
-            {project.videoId
-              ? <iframe
-                src={`https://www.youtube.com/embed/${project.videoId}`}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-              : <img src={commingSoon} alt={project.title} />
-            }
-
-            <p>{t(`projects.${project.id}.description`)}</p>
-
-            <div className={styles.tecnologies}>
-              {project.tecnologies.map((tecnology) =>
-                <img src={tecnology} width="10%" height="50px" alt={tecnology} key={tecnology} />
+            <div className={styles.mediaWrap}>
+              {project.videoId ? (
+                <iframe
+                  className={styles.iframe}
+                  src={`https://www.youtube.com/embed/${project.videoId}`}
+                  title={`${project.title} demo`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              ) : (
+                <img
+                  className={styles.placeholderImg}
+                  src={commingSoon}
+                  alt=""
+                />
               )}
             </div>
 
-            <div className={styles.links}>
-              <a href={project.repositoryLink} className={styles.repositoryLink}>
-                <GitHub className={styles.githubLoge} />
-              </a>
+            <p className={styles.description}>{t(`projects.${project.id}.description`)}</p>
 
-              <button disabled={!project.deployLink} className={styles.deployLink}>
-                <a href={project.deployLink} target='blank'>
+            <div className={styles.techRow}>
+              {project.tecnologies.map((tecnology) => (
+                <img
+                  src={tecnology}
+                  alt=""
+                  className={styles.techIcon}
+                  key={tecnology}
+                />
+              ))}
+            </div>
+
+            <div className={styles.links}>
+              <a
+                href={project.repositoryLink}
+                className={styles.repoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <GitHub className={styles.githubIcon} />
+              </a>
+              {project.deployLink ? (
+                <a
+                  href={project.deployLink}
+                  className={styles.deployBtn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {t(`projects.${project.id}.deploy`)}
                 </a>
-              </button>
+              ) : (
+                <span className={styles.deployBtnDisabled}>
+                  {t(`projects.${project.id}.deploy`)}
+                </span>
+              )}
             </div>
           </article>
-        )}
-      </section>
-
-    </main>
+        ))}
+      </div>
+    </section>
   );
-}
+};
 
 export default Projects;

@@ -19,7 +19,7 @@ import leafnoiseLogo from '../../assets/logos/leafnoise.png';
 import mercadolibreLogo from '../../assets/logos/mercadolibre.png';
 import itlgLogo from '../../assets/logos/itlg.png';
 
-const { java, springBoot, postgreSQL, mySql, react, reactQuery, javascript, typescript, go, bigquery } = resources;
+const { java, springBoot, postgreSQL, mySql, react, reactQuery, typescript, go, bigquery } = resources;
 
 const calculateDuration = (startDate, endDate) => {
     const start = new Date(startDate);
