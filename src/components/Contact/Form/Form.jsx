@@ -64,10 +64,13 @@ const Form = () => {
 
     return (
         <form className={style.formContainer} onSubmit={sendMessage} >
-            <h2>{t('contact.title')}</h2>
+            <h3 className={style.formTitle}>{t('contact.form.subtitle')}</h3>
 
             {formInputs.map((input) => (
-                <div key={input.id}>
+                <div
+                    key={input.id}
+                    className={`${style.field} ${input.name === 'email' || input.name === 'message' ? style.fieldSpan : ''}`}
+                >
                     <label htmlFor={input.name}>
                         {t(`contact.form.${input.id}`)}
                     </label>
@@ -77,33 +80,24 @@ const Form = () => {
                             className={style[input.name]}
                             placeholder={t(`contact.form.${input.name}_placeholder`)}
                             name={input.name}
+                            id={input.name}
                             value={state[input.name]}
                             onChange={handleChange}
                         />
                         : <textarea
                             className={style.message}
                             placeholder={t('contact.form.message_placeholder')}
-                            name='message' value={state.message}
+                            name='message'
+                            id="message"
+                            value={state.message}
                             onChange={handleChange}
                         />}
                 </div>
             ))}
 
-            {/* <div>
-                
-                <label htmlFor='message'>{t(`contact.form.message`)}</label>
-                <textarea
-                    className={style.message}
-                    placeholder={t('contact.form.message_placeholder')}
-                    name='message' value={state.message}
-                    onChange={handleChange}
-                />
-            </div> */}
-
-            <button type='submit' disabled={!state.name || !state.lastname || !state.email || !state.message}>{t('contact.form.submit')}</button>
+            <button type='submit' className={style.submit} disabled={!state.name || !state.lastname || !state.email || !state.message}>{t('contact.form.submit')}</button>
         </form>
     )
 }
 
 export default Form;
-

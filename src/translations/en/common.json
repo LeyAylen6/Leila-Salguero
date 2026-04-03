@@ -167,6 +167,9 @@
     "certificates": "My Certifications",
     "contact": {
         "title": "Contact me",
+        "lede": "Reach out via the form or connect on social and phone.",
+        "map_title": "Location",
+        "phone_label": "Phone",
         "form": {
             "subtitle": "Send me an e-mail",
             "name": "Name",
