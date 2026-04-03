@@ -40,24 +40,28 @@
     },
     "work_experience": {
         "title": "Experiencia Laboral",
-        "leafnoise_back": {
-            "fromToDate": "Feb. 2025 - Actualidad",
-            "resume": []
-        },
-        "itlg_back": {
-            "fromToDate": "Ene. 2024 - Jun 2024",
+        "mercadolibre_back": {
+            "fromToDate": "Jul. 2025 - Actualidad",
             "resume": [
-                "● Creación y mantenimiento de APIs utilizando Java y Spring Boot",
-                "● Migración de Base de datos PostgreSQL a MySQL"
+                "● Desarrollo de soluciones backend escalables utilizando Go",
+                "● Análisis de datos con BigQuery",
+                "● Mejora del producto de Mercado Envíos"
             ]
         },
-        "itlg_front": {
-            "fromToDate": "Ago. 2023 - Ene. 2024",
+        "leafnoise_back": {
+            "fromToDate": "Feb. 2025 - Jul. 2025",
             "resume": [
-                "Desarrollo de interfaces web atractivas y funcionales ●",
-                "Implementación de metodologías ágiles ●",
-                "Conexión entre frontend y APIs utilizando React-Query ●",
-                "Soporte para la resolución de Bugs productivos ●"
+                "● Desarrollo de APIs y microservicios con Java y Spring Boot",
+                "● Implementación de funcionalidades en la plataforma principal"
+            ]
+        },
+        "itlg_fullstack": {
+            "fromToDate": "Jul. 2023 - Jun. 2024",
+            "resume": [
+                "● Desarrollo de APIs RESTful con Java y Spring Boot",
+                "● Migración de Base de datos PostgreSQL a MySQL",
+                "● Desarrollo de interfaces web con React y React-Query",
+                "● Implementación de metodologías ágiles"
             ]
         }
     },
@@ -69,17 +73,17 @@
             {
                 "icon": "🏗️",
                 "title": "Visión Full Stack",
-                "description": "Construyo de punta a punta: desde APIs REST con Java/Spring Boot hasta interfaces React responsivas."
+                "description": "Construyo de punta a punta: desde APIs REST con Java/Spring Boot y Go hasta interfaces React responsivas."
             },
             {
                 "icon": "🤖",
                 "title": "Integración con IA",
-                "description": "Experiencia práctica con NVIDIA Nemotron, Cohere y FastAPI para funcionalidades inteligentes."
+                "description": "Experiencia práctica integrando IA en la construcción de aplicaciones."
             },
             {
                 "icon": "☁️",
                 "title": "Cloud & DevOps",
-                "description": "AWS RDS, Docker y pipelines CI/CD. Actualmente profundizando en AWS Cloud."
+                "description": "Experiencia con Docker y herramientas de despliegue. Trabajando con arquitecturas modernas para aplicaciones escalables."
             },
             {
                 "icon": "🎯",

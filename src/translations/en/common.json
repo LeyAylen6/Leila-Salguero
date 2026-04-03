@@ -40,24 +40,28 @@
     },
     "work_experience": {
         "title": "Work Experience",
-        "leafnoise_back": {
-            "fromToDate": "Feb. 2025 - Actually",
-            "resume": []
-        },
-        "itlg_back": {
-            "fromToDate": "Jan. 2024 - Jun 2024",
+        "mercadolibre_back": {
+            "fromToDate": "Jul. 2025 - Currently",
             "resume": [
-                "● Creation and maintenance of APIs using Java and Spring Boot",
-                "● Migration of PostgreSQL Database to MySQL"
+                "● Development of scalable backend solutions using Go",
+                "● Data analysis with BigQuery",
+                "● Enhancement of the Mercado Envíos product"
             ]
         },
-        "itlg_front": {
-            "fromToDate": "Aug. 2023 - Jan. 2024",
+        "leafnoise_back": {
+            "fromToDate": "Feb. 2025 - Jul. 2025",
             "resume": [
-                "Development of attractive and functional web interfaces ●",
-                "Implementation of agile methodologies ●",
-                "Connection between frontend and APIs using React-Query ●",
-                "Productive Bug Resolution Support ●"
+                "● Development of APIs and microservices with Java and Spring Boot",
+                "● Implementation of features on the main platform"
+            ]
+        },
+        "itlg_fullstack": {
+            "fromToDate": "Jul. 2023 - Jun. 2024",
+            "resume": [
+                "● Development of RESTful APIs with Java and Spring Boot",
+                "● Migration of PostgreSQL Database to MySQL",
+                "● Development of web interfaces with React and React-Query",
+                "● Implementation of agile methodologies"
             ]
         }
     },
@@ -69,17 +73,17 @@
             {
                 "icon": "🏗️",
                 "title": "Full Stack Mindset",
-                "description": "I build end-to-end: from REST APIs with Java/Spring Boot to responsive React UIs."
+                "description": "I build end-to-end: from REST APIs with Java/Spring Boot and Go to responsive React UIs."
             },
             {
                 "icon": "🤖",
                 "title": "AI Integration",
-                "description": "Hands-on experience with NVIDIA Nemotron, Cohere, and FastAPI for intelligent features."
+                "description": "Hands-on experience integrating AI into application development."
             },
             {
                 "icon": "☁️",
                 "title": "Cloud & DevOps",
-                "description": "AWS RDS, Docker, and CI/CD pipelines. Currently deepening AWS Cloud skills."
+                "description": "Experience with Docker and deployment tools. Working with modern architectures for scalable applications."
             },
             {
                 "icon": "🎯",

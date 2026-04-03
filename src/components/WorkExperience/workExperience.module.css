@@ -1,3 +1,21 @@
+.experienceContainer>li:nth-child(2n) .MuiTimelineContent-root {
+    text-align: end;
+    margin-left: 0;
+}
+
+.experienceContainer>li:nth-child(2n - 1) .MuiTimelineContent-root {
+    text-align: start;
+    margin-right: 0;
+}
+
+.experienceContainer>li:nth-child(2n) .MuiTypography-root {
+    text-align: end;
+}
+
+.experienceContainer>li:nth-child(2n - 1) .MuiTypography-root {
+    text-align: start;
+}
+
 .experienceContainer>li:nth-child(2n) li {
     display: flex;
     justify-content: end;
