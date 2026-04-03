@@ -18,11 +18,24 @@
         "stats_roles": "Professional roles"
     },
     "skills": {
-        "title": "https://leila-salguero.vercel.app/static/media/Skills.4314ac89f2acdcede38a.mp4",
+        "title": "Skills",
         "accordion": {
             "development": "Development",
-            "testingQA": "Testing QA",
-            "tools": "Tools"
+            "databases": "Databases",
+            "testingQA": "Testing",
+            "tools": "Tools",
+            "monitoring": "Monitoring",
+            "aiTools": "AI Tools",
+            "devops": "DevOps & Cloud"
+        },
+        "description": {
+            "development": "Languages, frameworks and databases I use to build scalable applications.",
+            "databases": "Relational and non-relational databases and ORMs I use to manage data.",
+            "testingQA": "Tools I use to ensure software quality and prevent regressions.",
+            "tools": "Platforms I rely on for project management and team collaboration.",
+            "monitoring": "Observability tools I use to track performance and detect incidents.",
+            "aiTools": "AI-powered tools that boost my productivity and code quality.",
+            "devops": "Cloud and infrastructure tools I use to deploy and scale applications."
         }
     },
     "work_experience": {
@@ -77,6 +90,10 @@
     },
     "projects": {
         "title": "My Projects",
+        "subtitle": "Curated selection focused on impact, stack, and results. Below you can explore all projects in detail.",
+        "featured_title": "Featured",
+        "featured_badge": "Top",
+        "all_title": "All projects",
         "tutor_ia": {
             "type": "Team project",
             "description": "TutorIA is an innovative educational app that uses artificial intelligence to personalize learning, allowing users to progress at their own pace with personalized recommendations and interactive activities. Built with a microservices architecture, it uses Angular for the frontend, Java for the backend, and Python for the artificial intelligence. The AI is based on the advanced NVIDIA Nemotron language model and FastAPI for creating efficient APIs, adapting content to the needs of each user and providing a personalized, scalable learning experience.",

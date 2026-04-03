@@ -21,8 +21,8 @@ const App = () => {
       <Projects />
       <Certifications />
       <Contact />
-      <Footer />
       <OpenToWork />
+      <Footer />
     </div>
   );
 }

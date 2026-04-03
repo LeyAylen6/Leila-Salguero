@@ -33,15 +33,15 @@
 }
 
 .waveBack {
-    fill: rgba(253, 177, 253, 0.25);
+    fill: rgba(45, 11, 78, 0.3);
 }
 
 .waveMid {
-    fill: rgba(253, 177, 253, 0.5);
+    fill: rgba(45, 11, 78, 0.65);
 }
 
 .waveFront {
-    fill: #fdb1fd;
+    fill: #2d0b4e;
 }
 
 .subtitle {
