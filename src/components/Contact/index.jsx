@@ -15,12 +15,12 @@ const Contact = () => {
       <hr />
 
       <section className={styles.contactLinks}>
-        <a className={`${styles.link} ${styles.linkLinkedIn}`} href="https://www.linkedin.com/in/leilaaylensalguero/" target='_blank'>
+        <a className={`${styles.link} ${styles.linkLinkedIn}`} href="https://www.linkedin.com/in/leilaaylensalguero/" target='_blank' rel="noreferrer">
           <img src={LinkedIn} alt='Linkedin Logo' />
           <span>leilaaylensalguero</span>
         </a>
 
-        <a className={`${styles.link} ${styles.linkGithub}`} href="https://github.com/LeyAylen6" target='_blank'>
+        <a className={`${styles.link} ${styles.linkGithub}`} href="https://github.com/LeyAylen6" target='_blank' rel="noreferrer">
           <img src={Github} alt='Github Logo' />
           <span>LeyAylen6</span>
         </a>
@@ -38,6 +38,7 @@ const Contact = () => {
           className={styles.map}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          title="Google Maps"
           allowFullScreen
         ></iframe>
       </section >
