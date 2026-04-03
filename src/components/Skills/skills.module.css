@@ -33,26 +33,19 @@
 
 /* ── Tabs ── */
 .tabs {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     margin-bottom: 16px;
     z-index: 1;
-    max-width: 1050px;
     width: 100%;
-    overflow-x: auto;
+    max-width: 1050px;
     padding-bottom: 4px;
-    scrollbar-width: none;
-}
-
-.tabs::-webkit-scrollbar {
-    display: none;
 }
 
 .tab {
     display: flex;
     align-items: center;
-    flex: 1;
     justify-content: center;
     gap: 7px;
     padding: 9px 14px;
@@ -229,6 +222,16 @@
 .waveFront { fill: #000000; }
 
 /* ── Responsive ── */
+@media only screen and (max-width: 1160px) {
+    .tabs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tab {
+        font-size: 0.8rem;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .skillsSection {
         padding: 50px 4% 150px;
@@ -240,6 +243,8 @@
     }
 
     .tabs {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1050px;
         gap: 7px;
         margin-bottom: 12px;
     }
@@ -268,6 +273,10 @@
 @media only screen and (max-width: 480px) {
     .skillsSection {
         padding: 44px 4% 110px;
+    }
+
+    .tabs {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .tab span:not(.badge) {
