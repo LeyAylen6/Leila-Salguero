@@ -245,7 +245,8 @@
         flex-shrink: 0;
     }
 
-    .channels .channelHandle {
+    .channels .channelGithub .channelHandle,
+    .channels .channelLinkedIn .channelHandle {
         display: none;
     }
 
@@ -278,5 +279,9 @@
 
     .title {
         font-size: 2rem;
+    }
+
+    .channels .channelPhone .channelHandle {
+        display: none;
     }
 }

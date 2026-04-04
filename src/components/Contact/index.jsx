@@ -57,6 +57,7 @@ const Contact = () => {
               <IconSmartphone className={styles.phoneIcon} aria-hidden />
             </span>
             <span className={styles.channelLabel}>{t('contact.phone_label')}</span>
+            <span className={styles.channelHandle}>(+54) 11-5807-9279</span>
           </a>
           </li>
         </ul>

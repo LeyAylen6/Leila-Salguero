@@ -27,7 +27,6 @@ const App = () => {
       <SectionDivider />
       <Contact />
       <OpenToWork />
-      <SectionDivider />
       <Footer />
     </div>
   );
