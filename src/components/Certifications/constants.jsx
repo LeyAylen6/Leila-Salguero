@@ -34,26 +34,14 @@ const customDots = (dots) => (
     </div>
 );
 
-export const settings = {
+export const CERTIFICATIONS_MOBILE_MEDIA = '(max-width: 767px)';
+
+export const certificationsSliderBase = {
     dots: true,
-    arrows: true,
     infinite: true,
     autoplay: true,
     speed: 500,
-    slidesToShow: 2,
     slidesToScroll: 1,
-    /* react-slick: max-width 767px = móvil (1 slide); desde 768px = tablet y desktop (2 slides, default). */
-    responsive: [
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                arrows: false,
-            },
-        },
-    ],
     appendDots: customDots,
 };
 
