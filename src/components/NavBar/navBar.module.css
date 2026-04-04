@@ -18,6 +18,19 @@
 
 .navBarMobile {
     display: none !important;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin: 0 8px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.navBarMobile:hover {
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .navBarBrowser {

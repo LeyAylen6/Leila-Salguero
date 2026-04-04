@@ -28,6 +28,12 @@ export const certificates = [
     },
 ];
 
+const customDots = (dots) => (
+    <div>
+        <ul className={styles.slickDots}>{dots}</ul>
+    </div>
+);
+
 export const settings = {
     dots: true,
     arrows: true,
@@ -53,9 +59,6 @@ export const settings = {
             }
         }
     ],
-    appendDots: dots => (
-        <div>
-            <ul className={styles.slickDots}> {dots} </ul>
-        </div>
-    )
+    appendDots: customDots
 };
+

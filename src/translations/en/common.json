@@ -1,5 +1,8 @@
 {
     "navbar": {
+        "open_menu": "Open menu",
+        "close_menu": "Close menu",
+        "mobile_menu": "Site navigation",
         "about": "About me",
         "skills": "Skills",
         "work_experience": "Work Experience",
@@ -43,25 +46,25 @@
         "mercadolibre_back": {
             "fromToDate": "Jul. 2025 - Currently",
             "resume": [
-                "● Development of scalable backend solutions using Go",
-                "● Data analysis with BigQuery",
-                "● Enhancement of the Mercado Envíos product"
+                "Development of scalable backend solutions using Go",
+                "Data analysis with BigQuery",
+                "Enhancement of the Mercado Envíos product"
             ]
         },
         "leafnoise_back": {
             "fromToDate": "Feb. 2025 - Jul. 2025",
             "resume": [
-                "● Development of APIs and microservices with Java and Spring Boot",
-                "● Implementation of features on the main platform"
+                "Development of APIs and microservices with Java and Spring Boot",
+                "Implementation of features on the main platform"
             ]
         },
         "itlg_fullstack": {
             "fromToDate": "Jul. 2023 - Jun. 2024",
             "resume": [
-                "● Development of RESTful APIs with Java and Spring Boot",
-                "● Migration of PostgreSQL Database to MySQL",
-                "● Development of web interfaces with React and React-Query",
-                "● Implementation of agile methodologies"
+                "Development of RESTful APIs with Java and Spring Boot",
+                "Migration of PostgreSQL Database to MySQL",
+                "Development of web interfaces with React and React-Query",
+                "Implementation of agile methodologies"
             ]
         }
     },
@@ -167,6 +170,9 @@
     "certificates": "My Certifications",
     "contact": {
         "title": "Contact me",
+        "lede": "Reach out via the form or connect on social and by phone.",
+        "map_title": "Location",
+        "phone_label": "Phone",
         "form": {
             "subtitle": "Send me an e-mail",
             "name": "Name",
@@ -178,6 +184,22 @@
             "message": "Message",
             "message_placeholder": "Write your message here...",
             "error": "You must complete all fields",
+            "validation_name_required": "Please enter your first name.",
+            "validation_name_short": "First name must be at least 3 characters.",
+            "validation_lastname_required": "Please enter your last name.",
+            "validation_lastname_short": "Last name must be at least 3 characters.",
+            "validation_email_required": "Please enter your email address.",
+            "validation_email_invalid": "That doesn't look like a valid email (e.g. name@domain.com).",
+            "validation_message_required": "Please write a message.",
+            "validation_message_short": "Message must be at least 10 characters.",
+            "send_success": "Your message was sent. I'll get back to you when I can.",
+            "send_error_intro": "Could not send the message. Check your connection and EmailJS settings, or reach out on LinkedIn.",
+            "env_not_configured_detail": "EmailJS environment variables are missing in your local .env file (VITE_EMAILJS_*).",
+            "modal_success_title": "All set!",
+            "modal_error_title": "Something went wrong",
+            "modal_ok": "Got it",
+            "modal_close": "Close",
+            "sending": "Sending…",
             "submit": "Send"
         }
     },

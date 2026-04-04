@@ -7,6 +7,7 @@ const Highlights = () => {
 
   return (
     <section className={styles.highlights}>
+      <div className={styles.bgGlow} aria-hidden />
       <hr className={styles.divider} />
       <h2>{t('highlights.title')}</h2>
       <p className={styles.subtitle}>{t('highlights.subtitle')}</p>
