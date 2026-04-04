@@ -2,7 +2,7 @@ import styles from './contact.module.css'
 import FormMessage from './Form/Form'
 import Github from './../../assets/contact/Github.png'
 import LinkedIn from './../../assets/contact/LinkedIn.png'
-import EmailIcon from './../../assets/contact/email.svg'
+import { IconSmartphone } from '../icons'
 import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
@@ -20,21 +20,6 @@ const Contact = () => {
         <ul className={styles.channels}>
           <li>
           <a
-            className={`${styles.channel} ${styles.channelLinkedIn}`}
-            href="https://www.linkedin.com/in/leilaaylensalguero/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className={styles.channelIconWrap}>
-              <img src={LinkedIn} alt="" width={28} height={28} />
-            </span>
-            <span className={styles.channelLabel}>LinkedIn</span>
-            <span className={styles.channelHandle}>leilaaylensalguero</span>
-          </a>
-          </li>
-
-          <li>
-          <a
             className={`${styles.channel} ${styles.channelGithub}`}
             href="https://github.com/LeyAylen6"
             target="_blank"
@@ -50,14 +35,29 @@ const Contact = () => {
 
           <li>
           <a
-            className={`${styles.channel} ${styles.channelEmail}`}
-            href="mailto:leiisalguero@gmail.com"
+            className={`${styles.channel} ${styles.channelLinkedIn}`}
+            href="https://www.linkedin.com/in/leilaaylensalguero/"
+            target="_blank"
+            rel="noreferrer"
           >
             <span className={styles.channelIconWrap}>
-              <img src={EmailIcon} alt="" width={28} height={28} />
+              <img src={LinkedIn} alt="" width={28} height={28} />
             </span>
-            <span className={styles.channelLabel}>{t('contact.email_label')}</span>
-            <span className={styles.channelHandle}>leiisalguero@gmail.com</span>
+            <span className={styles.channelLabel}>LinkedIn</span>
+            <span className={styles.channelHandle}>leilaaylensalguero</span>
+          </a>
+          </li>
+
+          <li>
+          <a
+            className={`${styles.channel} ${styles.channelPhone}`}
+            href="tel:+541158079279"
+            aria-label={`${t('contact.phone_label')}: (+54) 11-5807-9279`}
+          >
+            <span className={styles.channelIconWrap}>
+              <IconSmartphone className={styles.phoneIcon} aria-hidden />
+            </span>
+            <span className={styles.channelLabel}>{t('contact.phone_label')}</span>
           </a>
           </li>
         </ul>

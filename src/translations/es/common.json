@@ -1,5 +1,8 @@
 {
     "navbar": {
+        "open_menu": "Abrir menú",
+        "close_menu": "Cerrar menú",
+        "mobile_menu": "Navegación del sitio",
         "about": "Sobre mi",
         "skills": "Habilidades",
         "work_experience": "Experiencia Laboral",
@@ -43,25 +46,25 @@
         "mercadolibre_back": {
             "fromToDate": "Jul. 2025 - Actualidad",
             "resume": [
-                "● Desarrollo de soluciones backend escalables utilizando Go",
-                "● Análisis de datos con BigQuery",
-                "● Mejora del producto de Mercado Envíos"
+                "Desarrollo de soluciones backend escalables utilizando Go",
+                "Análisis de datos con BigQuery",
+                "Mejora del producto de Mercado Envíos"
             ]
         },
         "leafnoise_back": {
             "fromToDate": "Feb. 2025 - Jul. 2025",
             "resume": [
-                "● Desarrollo de APIs y microservicios con Java y Spring Boot",
-                "● Implementación de funcionalidades en la plataforma principal"
+                "Desarrollo de APIs y microservicios con Java y Spring Boot",
+                "Implementación de funcionalidades en la plataforma principal"
             ]
         },
         "itlg_fullstack": {
             "fromToDate": "Jul. 2023 - Jun. 2024",
             "resume": [
-                "● Desarrollo de APIs RESTful con Java y Spring Boot",
-                "● Migración de Base de datos PostgreSQL a MySQL",
-                "● Desarrollo de interfaces web con React y React-Query",
-                "● Implementación de metodologías ágiles"
+                "Desarrollo de APIs RESTful con Java y Spring Boot",
+                "Migración de Base de datos PostgreSQL a MySQL",
+                "Desarrollo de interfaces web con React y React-Query",
+                "Implementación de metodologías ágiles"
             ]
         }
     },
@@ -167,9 +170,9 @@
     "certificates": "Mis Certificaciones",
     "contact": {
         "title": "Contactame",
-        "lede": "Escribime por el formulario o conectá por redes y correo.",
+        "lede": "Escribime por el formulario o conectá por redes y teléfono.",
         "map_title": "Ubicación",
-        "email_label": "Email",
+        "phone_label": "Teléfono",
         "form": {
             "subtitle": "Enviame un email",
             "name": "Nombre",
@@ -181,6 +184,22 @@
             "message": "Mensaje",
             "message_placeholder": "Ej: Escribe tu mensaje aquí ...",
             "error": "Debe completar todos los campos",
+            "validation_name_required": "Ingresá tu nombre.",
+            "validation_name_short": "El nombre debe tener al menos 3 caracteres.",
+            "validation_lastname_required": "Ingresá tu apellido.",
+            "validation_lastname_short": "El apellido debe tener al menos 3 caracteres.",
+            "validation_email_required": "Ingresá tu correo electrónico.",
+            "validation_email_invalid": "El correo no tiene un formato válido (ej: nombre@dominio.com).",
+            "validation_message_required": "Escribí un mensaje.",
+            "validation_message_short": "El mensaje debe tener al menos 10 caracteres.",
+            "send_success": "Tu mensaje fue enviado. Te responderé cuando pueda.",
+            "send_error_intro": "No se pudo enviar el mensaje. Revisá tu conexión y la configuración de EmailJS, o escribime por LinkedIn.",
+            "env_not_configured_detail": "Faltan variables de EmailJS en el archivo .env local (VITE_EMAILJS_*).",
+            "modal_success_title": "¡Listo!",
+            "modal_error_title": "Algo salió mal",
+            "modal_ok": "Entendido",
+            "modal_close": "Cerrar",
+            "sending": "Enviando…",
             "submit": "Enviar"
         }
     },

@@ -1,5 +1,5 @@
 import styles from './projects.module.css';
-import { GitHub } from '@mui/icons-material';
+import { IconGitHub } from '../icons';
 import { projects } from './constants';
 import { useTranslation } from 'react-i18next';
 import commingSoon from './../../assets/proyects/commingSoon.gif';
@@ -72,7 +72,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                <GitHub className={styles.githubIcon} />
+                <IconGitHub className={styles.githubIcon} />
               </a>
               {project.deployLink ? (
                 <a

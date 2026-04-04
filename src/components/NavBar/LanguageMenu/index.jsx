@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PublicIcon from '@mui/icons-material/Public';
+import { IconGlobe } from '../../icons';
 
 import spanish from "./../../../assets/languages/spanish.svg"
 import english from "./../../../assets/languages/english.svg"
@@ -15,8 +15,8 @@ const LanguageMenu = () => {
 
     return (
         <div className={styles.languageSelector}>
-            <button className={styles.languageButton}>
-                <PublicIcon sx={{ height: "40px", width: "40px", color: "white" }} />
+            <button type="button" className={styles.languageButton} aria-label="Idioma">
+                <IconGlobe className={styles.globeIcon} size={40} />
             </button>
 
             <div className={styles.languageDropdown}>

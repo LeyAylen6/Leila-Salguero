@@ -1,19 +1,9 @@
 import * as React from 'react';
-
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-
 import { useTranslation } from 'react-i18next';
 
-import styles from "./workExperience.module.css"
+import { useMediaQuery } from '../../hooks/useMediaQuery';
+
+import styles from "./workExperience.module.css";
 import { resources } from '../Skills/constants';
 import leafnoiseLogo from '../../assets/logos/leafnoise.png';
 import mercadolibreLogo from '../../assets/logos/mercadolibre.png';
@@ -21,16 +11,19 @@ import itlgLogo from '../../assets/logos/itlg.png';
 
 const { java, springBoot, postgreSQL, mySql, react, reactQuery, typescript, go, bigquery } = resources;
 
+/** Mismo umbral que MUI `theme.breakpoints.down('md')` (~900px) */
+const MQ_NARROW = '(max-width: 899.98px)';
+
 const calculateDuration = (startDate, endDate) => {
     const start = new Date(startDate);
     const end = new Date(endDate);
-    
+
     let months = (end.getFullYear() - start.getFullYear()) * 12;
     months += end.getMonth() - start.getMonth();
-    
+
     const years = Math.floor(months / 12);
     const remainingMonths = months % 12;
-    
+
     if (years > 0 && remainingMonths > 0) {
         return `${years} año${years > 1 ? 's' : ''} ${remainingMonths} mes${remainingMonths > 1 ? 'es' : ''}`;
     } else if (years > 0) {
@@ -71,63 +64,117 @@ const experiences = [
         tecnologies: [java, springBoot, postgreSQL, mySql, react, reactQuery, typescript],
         justifyContent: "start"
     }
-
-]
+];
 
 const WorkExperience = () => {
     const { t } = useTranslation('common');
+    const isNarrow = useMediaQuery(MQ_NARROW);
+
+    const experienceBody = (experience) => (
+        <>
+            <span className={styles.bubbleTitle}>
+                {`${experience.company} - ${experience.charge}`}
+            </span>
+            <div
+                className={[
+                    styles.bubbleDatesRow,
+                    isNarrow || experience.justifyContent !== 'end'
+                        ? styles.bubbleDatesRowStart
+                        : styles.bubbleDatesRowEnd,
+                ].join(' ')}
+            >
+                <span className={styles.bubbleDatePrimary}>
+                    {t(`work_experience.${experience.id}.fromToDate`)}
+                </span>
+                <span className={styles.bubbleDateDuration}>
+                    ({calculateDuration(experience.startDate, experience.endDate)})
+                </span>
+            </div>
+            <ul className={styles.experienceList}>
+                {t(`work_experience.${experience.id}.resume`, { returnObjects: true }).map((resume, i) => (
+                    <li key={i} className={styles.experienceListItem}>
+                        {resume}
+                    </li>
+                ))}
+            </ul>
+            <div className={styles.techRow}>
+                {experience.tecnologies.map((tecnology) => (
+                    <div className={styles.techIconPad} key={tecnology}>
+                        <img
+                            src={tecnology}
+                            alt=""
+                            className={styles.techIconImg}
+                        />
+                    </div>
+                ))}
+            </div>
+        </>
+    );
+
+    const renderBubble = (experience, tailRight) => (
+        <div className={styles.bubbleWrap}>
+            <div
+                className={[
+                    styles.speechBubble,
+                    tailRight ? styles.speechBubbleTailRight : styles.speechBubbleTailLeft,
+                ].join(' ')}
+            >
+                {experienceBody(experience)}
+            </div>
+        </div>
+    );
+
+    const renderLogoDot = (experience) => (
+        <div className={styles.logoDot}>
+            <img
+                src={experience.logo}
+                alt={`${experience.company} logo`}
+                className={styles.logoImg}
+            />
+        </div>
+    );
 
     return (
-        <Box id="experience">
-            <h2>Experiencia Laboral</h2>
-            <Timeline position="alternate" className={styles.experienceContainer}>
-                {
-                    experiences.map((experience, i) => (
-                        <TimelineItem key={`${experience}-${i}`}>
-                            <TimelineSeparator>
-                                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-                                <TimelineDot color="secondary" sx={{ padding: 0, width: 60, height: 60, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', overflow: 'hidden', borderRadius: '50%' }}>
-                                    <Box
-                                        component="img"
-                                        src={experience.logo}
-                                        alt={`${experience.company} logo`}
-                                        sx={{ 
-                                            width: '90%', 
-                                            height: '90%', 
-                                            objectFit: 'contain'
-                                        }}
-                                    />
-                                </TimelineDot>
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent sx={{ py: '40px', width: "90%" }}>
-                                <Typography fontSize="30px" component="span" color="white" fontWeight="bold">
-                                    {`${experience.company} - ${experience.charge}`}
-                                </Typography>
-                                <Box display="flex" alignItems="center" gap={1} mt={0.5} sx={{ justifyContent: experience.justifyContent === 'end' ? 'flex-end' : 'flex-start' }}>
-                                    <Typography color="pink">{t(`work_experience.${experience.id}.fromToDate`)}</Typography>
-                                    <Typography color="secondary" fontSize="0.9rem" fontStyle="italic">
-                                        ({calculateDuration(experience.startDate, experience.endDate)})
-                                    </Typography>
-                                </Box>
-                                <Box color="white">
-                                    <List>
-                                        {t(`work_experience.${experience.id}.resume`, { returnObjects: true }).map((resume, i) => <ListItem key={i}>{resume}</ListItem >)}
-                                    </List>
-                                </Box>
-                                <Box display="flex" className={styles.tecnologies}>
-                                    {experience.tecnologies.map((tecnology) =>
-                                        <Box p={2} key={tecnology}>
-                                            <img src={tecnology} height="40rem" alt='Technology Logo' />
-                                        </Box>
-                                    )}
-                                </Box>
-                            </TimelineContent>
-                        </TimelineItem>
-                    ))
-                }
-            </Timeline>
-        </Box>
+        <section id="experience" className={styles.experienceSection}>
+            <h2 className={isNarrow ? styles.mobileSectionTitle : undefined}>Experiencia Laboral</h2>
+            <div
+                className={[styles.timelineRoot, isNarrow ? styles.narrowTimeline : ''].filter(Boolean).join(' ')}
+                role="list"
+            >
+                <div className={styles.timelineSpine} aria-hidden />
+                {experiences.map((experience, i) => {
+                    const bubbleOnLeft = !isNarrow && i % 2 === 1;
+                    const bubbleOnRight = !isNarrow && i % 2 === 0;
+
+                    return (
+                        <div
+                            key={`${experience.id}-${i}`}
+                            className={isNarrow ? styles.timelineRowNarrow : styles.timelineRowWide}
+                            role="listitem"
+                        >
+                            {isNarrow ? (
+                                <>
+                                    <div className={styles.axisCell}>{renderLogoDot(experience)}</div>
+                                    <div className={styles.bubbleCell}>
+                                        {renderBubble(experience, false)}
+                                    </div>
+                                </>
+                            ) : (
+                                <>
+                                    <div className={`${styles.sideCell} ${styles.sideCellAlignEnd}`}>
+                                        {bubbleOnLeft ? renderBubble(experience, true) : null}
+                                    </div>
+                                    <div className={styles.axisCell}>{renderLogoDot(experience)}</div>
+                                    <div className={`${styles.sideCell} ${styles.sideCellAlignStart}`}>
+                                        {bubbleOnRight ? renderBubble(experience, false) : null}
+                                    </div>
+                                </>
+                            )}
+                        </div>
+                    );
+                })}
+            </div>
+        </section>
     );
 };
 

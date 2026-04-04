@@ -8,6 +8,15 @@
     border: none;
     cursor: pointer;
     padding-right: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.globeIcon {
+    display: block;
+    flex-shrink: 0;
 }
 
 .flag {

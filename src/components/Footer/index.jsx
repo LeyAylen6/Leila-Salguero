@@ -1,9 +1,6 @@
 import styles from './footer.module.css';
 import { useTranslation } from 'react-i18next';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { IconGitHub, IconLinkedIn, IconEmail, IconKeyboardArrowUp } from '../icons';
 
 const Footer = () => {
   const { t } = useTranslation('common');
@@ -20,7 +17,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <a href="#about" className={styles.backToTop} aria-label="Back to top">
-        <KeyboardArrowUpIcon sx={{ fontSize: 28 }} />
+        <IconKeyboardArrowUp size={28} />
       </a>
 
       <div className={styles.content}>
@@ -45,7 +42,7 @@ const Footer = () => {
             className={styles.socialLink}
             aria-label="LinkedIn"
           >
-            <LinkedInIcon />
+            <IconLinkedIn size={22} />
           </a>
           <a
             href="https://github.com/LeyAylen6"
@@ -54,14 +51,14 @@ const Footer = () => {
             className={styles.socialLink}
             aria-label="GitHub"
           >
-            <GitHubIcon />
+            <IconGitHub size={22} />
           </a>
           <a
             href="mailto:leilasalguero6@gmail.com"
             className={styles.socialLink}
             aria-label="Email"
           >
-            <EmailIcon />
+            <IconEmail size={22} />
           </a>
         </div>
       </div>

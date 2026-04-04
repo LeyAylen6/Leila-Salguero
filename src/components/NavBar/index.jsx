@@ -1,22 +1,19 @@
-import { useState, Fragment } from 'react';
+import { useState, Fragment, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import styles from './navBar.module.css'
+import styles from './navBar.module.css';
 
-import separation from './../../assets/navbarSeparation.svg'
+import separation from './../../assets/navbarSeparation.svg';
 import LanguageMenu from './LanguageMenu/index';
 import MobileMenu from './MobileMenu';
-
-import Button from '@mui/material/Button';
-import MenuIcon from '@mui/icons-material/Menu';
-import { Box } from '@mui/material';
+import { IconMenu } from '../icons';
 
 const NavBar = () => {
   const { t } = useTranslation('common');
 
   const [open, setOpen] = useState(false);
 
-  const toggleDrawer = (newOpen) => () => setOpen(newOpen);
+  const toggleDrawer = useCallback((newOpen) => () => setOpen(newOpen), []);
 
   const tabs = [{
     id: "about",
@@ -39,12 +36,19 @@ const NavBar = () => {
   }]
 
   return (
-    <Box className={styles.navBar}>
-      <Button onClick={toggleDrawer(!open)} className={styles.navBarMobile}>
-        <MenuIcon sx={{ width: "50px", height: "50px", color: "white" }} />
-      </Button>
+    <header className={styles.navBar}>
+      <button
+        type="button"
+        onClick={toggleDrawer(!open)}
+        className={styles.navBarMobile}
+        aria-expanded={open}
+        aria-controls="mobile-drawer-nav"
+        aria-label={open ? t('navbar.close_menu') : t('navbar.open_menu')}
+      >
+        <IconMenu size={50} />
+      </button>
 
-      <Box className={styles.navBarBrowser}>
+      <div className={styles.navBarBrowser}>
         {tabs.map((tab) =>
           <Fragment key={tab.id}>
             <a href={tab.redirect} className={styles.link}>
@@ -53,11 +57,11 @@ const NavBar = () => {
             <img src={separation} alt='Separation line' />
           </Fragment>
         )}
-      </Box>
+      </div>
 
       <MobileMenu open={open} toggleDrawer={toggleDrawer} tabs={tabs} />
       <LanguageMenu />
-    </Box>
+    </header>
   );
 }
 

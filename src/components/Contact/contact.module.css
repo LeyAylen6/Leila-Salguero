@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
     background: #000000;
-    padding: 72px 5% 100px;
+    padding: 48px 5% 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,17 +80,23 @@
     gap: 6px;
     padding: 20px 22px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.065);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(10px);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.48),
+        0 0 48px -20px rgba(253, 177, 253, 0.18);
     text-decoration: none;
     color: inherit;
-    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease, background 0.25s ease;
 }
 
 .channel:hover {
-    border-color: rgba(253, 177, 253, 0.35);
-    box-shadow: 0 16px 40px rgba(255, 0, 255, 0.12);
+    background: rgba(255, 255, 255, 0.085);
+    border-color: rgba(253, 177, 253, 0.42);
+    box-shadow:
+        0 18px 44px rgba(0, 0, 0, 0.52),
+        0 0 56px -16px rgba(255, 0, 255, 0.22);
     transform: translateY(-3px);
 }
 
@@ -110,6 +116,12 @@
     object-fit: contain;
 }
 
+.phoneIcon {
+    width: 28px !important;
+    height: 28px !important;
+    color: rgba(22, 22, 22, 0.92);
+}
+
 .channelLabel {
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -126,15 +138,14 @@
 }
 
 .channelLinkedIn .channelIconWrap {
-    background: rgba(10, 102, 194, 0.25);
+    background: #0a66c2;
+    border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.channelGithub .channelIconWrap {
-    background: rgba(255, 255, 255, 0.12);
-}
-
-.channelEmail .channelIconWrap {
-    background: rgba(253, 177, 253, 0.12);
+.channelGithub .channelIconWrap,
+.channelPhone .channelIconWrap {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .lower {
@@ -151,10 +162,22 @@
     gap: 14px;
     padding: 22px 20px 20px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.065);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(10px);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.48),
+        0 0 48px -20px rgba(253, 177, 253, 0.18);
     min-height: 0;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.mapCard:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(253, 177, 253, 0.28);
+    box-shadow:
+        0 10px 36px rgba(0, 0, 0, 0.5),
+        0 0 52px -18px rgba(253, 177, 253, 0.22);
 }
 
 .mapTitle {
@@ -171,7 +194,8 @@
     min-height: 320px;
     border-radius: 14px;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 
 .map {
@@ -194,9 +218,42 @@
 
 @media only screen and (max-width: 1024px) {
     .channels {
-        grid-template-columns: 1fr;
-        max-width: 420px;
-        margin: 0 auto;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        max-width: none;
+        margin: 0;
+    }
+
+    .channels .channel {
+        height: auto;
+        min-height: 0;
+        padding: 14px 8px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .channels .channelIconWrap {
+        margin-bottom: 0;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .channels .channelHandle {
+        display: none;
+    }
+
+    .channels .channelGithub .channelLabel,
+    .channels .channelLinkedIn .channelLabel,
+    .channels .channelPhone .channelLabel {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        line-height: 1.2;
+        text-transform: none;
+        color: rgba(255, 255, 255, 0.88);
+        margin-top: 4px;
     }
 
     .lower {
@@ -210,7 +267,7 @@
 
 @media only screen and (max-width: 600px) {
     .section {
-        padding: 56px 5% 72px;
+        padding: 40px 5% 72px;
     }
 
     .title {

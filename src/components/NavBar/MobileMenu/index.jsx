@@ -1,38 +1,80 @@
 import * as React from 'react';
-
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-
-import star from "./../../../assets/commons/star.svg"
-
+import { createPortal } from 'react-dom';
 import { useTranslation } from 'react-i18next';
+import star from './../../../assets/commons/star.svg';
+import { IconClose } from '../../icons';
+import styles from './mobileMenu.module.css';
 
 const MobileMenu = ({ open, toggleDrawer, tabs }) => {
   const { t } = useTranslation('common');
 
-  return (
-    <Drawer open={open} onClose={toggleDrawer(false)}>
-      <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-        <List sx={{ paddingTop: 15 }}>
-          {tabs.map((tab) => (
-            <ListItem key={tab.id} disablePadding>
-              <ListItemButton href={tab.redirect}>
-                <ListItemIcon>
-                  <img src={star} width="30px" height="30px" alt='Star logo' />
-                </ListItemIcon>
-                <ListItemText primary={t(`navbar.${tab.id}`)} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </Box>
-    </Drawer>
+  React.useEffect(() => {
+    if (!open) return undefined;
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') toggleDrawer(false)();
+    };
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [open, toggleDrawer]);
+
+  if (typeof document === 'undefined') return null;
+
+  return createPortal(
+    <>
+      <div
+        className={`${styles.backdrop} ${open ? styles.backdropOpen : ''}`}
+        onClick={toggleDrawer(false)}
+        role="presentation"
+        aria-hidden={!open}
+      />
+      <aside
+        className={`${styles.drawer} ${open ? styles.drawerOpen : ''}`}
+        aria-hidden={!open}
+        aria-modal="true"
+        role="dialog"
+        aria-label={t('navbar.mobile_menu')}
+      >
+        <div className={styles.drawerHeader}>
+          <button
+            type="button"
+            className={styles.closeButton}
+            onClick={toggleDrawer(false)}
+            aria-label={t('navbar.close_menu')}
+          >
+            <IconClose size={28} />
+          </button>
+        </div>
+        <nav id="mobile-drawer-nav" aria-label="Mobile">
+          <ul className={styles.list}>
+            {tabs.map((tab) => (
+              <li key={tab.id} className={styles.item}>
+                <a
+                  href={tab.redirect}
+                  className={styles.link}
+                  onClick={toggleDrawer(false)}
+                >
+                  <img
+                    src={star}
+                    width={30}
+                    height={30}
+                    alt=""
+                    className={styles.linkIcon}
+                  />
+                  <span>{t(`navbar.${tab.id}`)}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </aside>
+    </>,
+    document.body
   );
-}
+};
 
 export default MobileMenu;

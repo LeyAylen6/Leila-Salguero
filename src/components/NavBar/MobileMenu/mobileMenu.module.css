@@ -1,0 +1,108 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 20000;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.backdropOpen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: min(280px, 85vw);
+  max-width: 280px;
+  height: 100%;
+  background: #0a0a0a;
+  border-right: 1px solid rgba(255, 0, 255, 0.25);
+  z-index: 20001;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  box-shadow: 8px 0 32px rgba(0, 0, 0, 0.5);
+  padding-top: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 12px 10px 8px;
+  border-bottom: 1px solid rgba(255, 0, 255, 0.2);
+  background: #0a0a0a;
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.closeButton:hover,
+.closeButton:focus-visible {
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+
+.drawerOpen {
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 12px 12px 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.item {
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.link:hover,
+.link:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+}
+
+.linkIcon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
