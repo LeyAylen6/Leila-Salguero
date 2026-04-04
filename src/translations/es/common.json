@@ -167,9 +167,9 @@
     "certificates": "Mis Certificaciones",
     "contact": {
         "title": "Contactame",
-        "lede": "Escribime por el formulario o conectá por redes y teléfono.",
+        "lede": "Escribime por el formulario o conectá por redes y correo.",
         "map_title": "Ubicación",
-        "phone_label": "Teléfono",
+        "email_label": "Email",
         "form": {
             "subtitle": "Enviame un email",
             "name": "Nombre",

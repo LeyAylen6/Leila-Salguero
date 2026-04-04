@@ -2,7 +2,7 @@ import styles from './contact.module.css'
 import FormMessage from './Form/Form'
 import Github from './../../assets/contact/Github.png'
 import LinkedIn from './../../assets/contact/LinkedIn.png'
-import Phone from './../../assets/contact/Phone.svg'
+import EmailIcon from './../../assets/contact/email.svg'
 import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
@@ -50,14 +50,14 @@ const Contact = () => {
 
           <li>
           <a
-            className={`${styles.channel} ${styles.channelPhone}`}
-            href="tel:+5491158079279"
+            className={`${styles.channel} ${styles.channelEmail}`}
+            href="mailto:leiisalguero@gmail.com"
           >
             <span className={styles.channelIconWrap}>
-              <img src={Phone} alt="" width={28} height={28} />
+              <img src={EmailIcon} alt="" width={28} height={28} />
             </span>
-            <span className={styles.channelLabel}>{t('contact.phone_label')}</span>
-            <span className={styles.channelHandle}>(+54) 11-5807-9279</span>
+            <span className={styles.channelLabel}>{t('contact.email_label')}</span>
+            <span className={styles.channelHandle}>leiisalguero@gmail.com</span>
           </a>
           </li>
         </ul>
