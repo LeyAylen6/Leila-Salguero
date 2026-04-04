@@ -17,7 +17,7 @@ const Certifications = () => {
   return (
     <div id='certifications' className={styles.certificatesContainer}>
       <h2>{t('certificates')}</h2>
-      <section className="carousel-container" style={{ width: "93%", paddingBottom: "2rem" }}>
+      <section className="carousel-container" style={{ width: "93%" }}>
         <SliderDefault {...settings}>
           {certificates.map((certificate, index) => (
             <a href={certificate.link || ""} key={index} className={styles.imageContainer}>

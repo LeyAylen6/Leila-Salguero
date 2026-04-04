@@ -19,6 +19,8 @@
 }
 
 .imLeila>p {
+    position: relative;
+    z-index: 1;
     text-align: center;
     color: white;
     width: 90%;
@@ -86,6 +88,8 @@
 }
 
 .quickStats {
+    position: relative;
+    z-index: 1;
     list-style: none;
     display: flex;
     gap: 16px;
@@ -150,6 +154,8 @@
     object-fit: cover;
     height: 280px;
     width: 100%;
+    z-index: 0;
+    pointer-events: none;
     mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
     -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
 }
@@ -166,6 +172,7 @@
     color: #ddd;
     font-size: clamp(2.6rem, 4.2vw, 4.6em);
     letter-spacing: .1em;
+    z-index: 1;
 }
 
 .imLeila>h1 span {
@@ -266,6 +273,8 @@
 }
 
 .imLeila>h3 {
+    position: relative;
+    z-index: 1;
     margin-top: -20px;
     height: 60px;
     color: fuchsia;

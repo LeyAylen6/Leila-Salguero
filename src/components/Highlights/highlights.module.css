@@ -1,16 +1,7 @@
-.divider {
-    width: 60%;
-    max-width: 600px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(253, 177, 253, 0.4), transparent);
-    border: none;
-    margin: 0 auto 30px;
-}
-
 .highlights {
     width: 100%;
     box-sizing: border-box;
-    padding: 80px 5% 180px;
+    padding: 52px 5% 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +20,6 @@
     z-index: 0;
 }
 
-.highlights > .divider,
 .highlights > h2,
 .highlights > .subtitle,
 .highlights > .grid {
@@ -184,8 +174,8 @@
     }
 
     .highlights {
-        padding: 60px 4% 100px;
-        margin-top: 30px;
+        padding: 44px 4% 100px;
+        margin-top: 0;
     }
 
     .waveBottom svg {

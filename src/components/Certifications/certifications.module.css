@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 48px;
+    box-sizing: border-box;
 }
 
 .certificatesContainer>h1 {
@@ -14,16 +16,46 @@
     margin-top: 0;
 }
 
+/* Evita que el contenido ancho desborde los slides de Slick en viewport estrechos */
+.certificatesContainer :global(.slick-list) {
+    overflow: hidden;
+}
+
+.certificatesContainer :global(.slick-slide) {
+    box-sizing: border-box;
+}
+
+.certificatesContainer :global(.slick-slide > div) {
+    height: 100%;
+}
+
+/* Puntos bajo las imágenes (slick-theme usa bottom: -25px; con scale en los bullets quedaban encima) */
+.certificatesContainer :global(.slick-dots) {
+    bottom: -3.25rem;
+    margin-top: 0.75rem;
+}
+
+.certificatesContainer :global(.carousel-container) {
+    padding-bottom: 3rem;
+}
+
 .imageContainer {
     height: 28rem;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
     cursor: pointer;
     display: flex !important;
     justify-content: center !important;
+    align-items: center;
 }
 
 .image {
     width: 42rem !important;
+    max-width: 100%;
     height: 100%;
+    object-fit: contain;
     cursor: pointer;
 }
 
@@ -35,7 +67,15 @@
 
 @media only screen and (max-width: 700px) {
     .certificatesContainer {
-        height: 40rem;
+        padding-bottom: 40px;
+    }
+
+    .certificatesContainer :global(.slick-dots) {
+        bottom: -2.75rem;
+    }
+
+    .certificatesContainer :global(.carousel-container) {
+        padding-bottom: 2.5rem;
     }
 
     .slickDots li button:before {
@@ -43,17 +83,23 @@
     }
 
     .imageContainer {
-        height: 22rem;
+        height: auto;
+        min-height: 18rem;
+        padding: 0 0.35rem;
     }
 
     .image {
-        height: 20rem !important;
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+        max-height: 20rem;
+        object-fit: contain;
     }
 }
 
 @media only screen and (max-width: 490px) {
     .certificatesContainer {
-        height: 35rem;
+        padding-bottom: 32px;
     }
 
     .slickDots li button:before {
@@ -61,10 +107,11 @@
     }
 
     .imageContainer {
-        height: 17rem;
+        min-height: 15rem;
+        padding: 0 0.25rem;
     }
 
     .image {
-        height: 15rem !important;
+        max-height: 15rem;
     }
 }

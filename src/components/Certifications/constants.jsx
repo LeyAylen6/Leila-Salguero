@@ -41,24 +41,19 @@ export const settings = {
     autoplay: true,
     speed: 500,
     slidesToShow: 2,
+    slidesToScroll: 1,
+    /* react-slick: max-width 767px = móvil (1 slide); desde 768px = tablet y desktop (2 slides, default). */
     responsive: [
         {
-            breakpoint: 1400,
+            breakpoint: 767,
             settings: {
-                dots: true,
-                arrows: true,
                 slidesToShow: 1,
-            }
-        },
-        {
-            breakpoint: 780,
-            settings: {
+                slidesToScroll: 1,
                 dots: true,
                 arrows: false,
-                slidesToShow: 1,
-            }
-        }
+            },
+        },
     ],
-    appendDots: customDots
+    appendDots: customDots,
 };
 

@@ -19,7 +19,6 @@ export const resources = {
     "bootstrap": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200515/Portfolio/Skills/bootstrap_tlctc9.svg",
     "angular": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200514/Portfolio/Skills/angular_dwb0fj.svg",
     "javascript": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200520/Portfolio/Skills/javascript_feupql.svg",
-    "css": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200515/Portfolio/Skills/css_l4gwq8.svg",
     "express": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
     "node": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
     "typescript": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200530/Portfolio/Skills/typescript_wkjee6.svg",
@@ -32,7 +31,6 @@ export const resources = {
     "reactQuery": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200525/Portfolio/Skills/React_Query_d6iv3n.png",
     "redux": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200526/Portfolio/Skills/redux_mycvxs.svg",
     "postgreSQL": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200523/Portfolio/Skills/postgresql_wvmpjk.svg",
-    "html": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200520/Portfolio/Skills/html_tnmzab.svg",
     "jira": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200521/Portfolio/Skills/jira_bufy79.svg",
     "zephyr": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200530/Portfolio/Skills/Zephyr_sembc2.png",
     "selenium": "https://res.cloudinary.com/dn3tgaige/image/upload/v1739200527/Portfolio/Skills/Selenium_vdig2i.png",
@@ -70,19 +68,10 @@ export const skills = [
             { "name": "Java", "image": resources.java },
             { "name": "Spring Boot", "image": resources.springBoot },
             { "name": "Go", "image": resources.go },
-            { "name": "Gin", "image": resources.gin },
             { "name": "Node", "image": resources.node },
-            { "name": "Express", "image": resources.express, invert: true },
-            { "name": "Lombok", "image": resources.lombok },
-            // Languages
+            // Languages & frontend
             { "name": "TypeScript", "image": resources.typescript },
-            { "name": "Javascript", "image": resources.javascript },
-            // Frontend
-            { "name": "React", "image": resources.react },
-            { "name": "Redux", "image": resources.redux },
-            { "name": "React Query", "image": resources.reactQuery },
-            { "name": "HTML", "image": resources.html },
-            { "name": "CSS", "image": resources.css }
+            { "name": "React", "image": resources.react }
         ]
     },
     {

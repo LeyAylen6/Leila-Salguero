@@ -1,8 +1,7 @@
 import styles from './contact.module.css'
 import FormMessage from './Form/Form'
 import Github from './../../assets/contact/Github.png'
-import LinkedIn from './../../assets/contact/LinkedIn.png'
-import { IconSmartphone } from '../icons'
+import { IconLinkedIn, IconSmartphone } from '../icons'
 import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
@@ -41,7 +40,7 @@ const Contact = () => {
             rel="noreferrer"
           >
             <span className={styles.channelIconWrap}>
-              <img src={LinkedIn} alt="" width={28} height={28} />
+              <IconLinkedIn className={styles.linkedinIcon} size={28} aria-hidden />
             </span>
             <span className={styles.channelLabel}>LinkedIn</span>
             <span className={styles.channelHandle}>leilaaylensalguero</span>

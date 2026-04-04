@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
     background: #000000;
-    padding: 48px 5% 100px;
+    padding: 56px 5% 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,6 +142,12 @@
     border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
+.channelLinkedIn .linkedinIcon {
+    color: #fff;
+    display: block;
+    flex-shrink: 0;
+}
+
 .channelGithub .channelIconWrap,
 .channelPhone .channelIconWrap {
     background: #fff;
@@ -267,7 +273,7 @@
 
 @media only screen and (max-width: 600px) {
     .section {
-        padding: 40px 5% 72px;
+        padding: 44px 5% 72px;
     }
 
     .title {
